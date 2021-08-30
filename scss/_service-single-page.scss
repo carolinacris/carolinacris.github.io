@@ -1,0 +1,180 @@
+#service-single-page{
+   .container{
+    padding: 15vh  0;
+    display: grid;   
+    @include grid-column(grid, 1fr 25fr, start);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 5vw;
+    align-items: center;
+        .circle2{
+            @include grid-col-startend(1,2);
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: $white;
+            height: 2.8rem;
+            width: 2.8rem;
+            border-radius: 50%;
+            border: 1px solid $red;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            
+            
+            .fa-code{ 
+                position: relative;
+                left: 0.4rem;
+                color: $red; 
+                }
+
+                &:hover{ 
+                    background-color: $red;
+                    .fa-code{color:$white;}
+                    transform: scale(1.1);
+                    transition: ease-in 0.3s;
+                }
+        }
+        h2{
+            letter-spacing: 9pt;
+            @include grid-col-startend(2,3);
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+        }
+        .uno{
+            @include grid-col-startend(2,3);
+            grid-row-start: 2;
+            grid-row-end: 3;
+            width: 70vw;
+            margin-top: 4vh;
+        }
+    
+        .content-container-service{
+            @include grid-col-startend(2,3);
+            margin-top: 20vh;
+            display: flex;
+            flex-wrap: wrap;
+            
+          
+            .services-card-page{
+                width: 35vw;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 2;
+                flex-shrink: 1.5;
+                min-width: 250px;
+                .text-box-card-1{
+                    padding: 0;
+                    p{margin-top: 2rem;}
+                }
+                #model-viewer model-viewer{
+                   margin-bottom: 3rem;
+                   height: 25vh;
+                   
+
+                    // width: 15vw;
+                }
+            }
+        }
+        .box-suggeriti{
+            @include grid-col-startend(2,3);
+            margin-top: 20vh;
+            .title{ display: flex;
+                    align-items: center;
+                    padding-top: 10vh;
+                    h2{ font-size: 2.3rem;
+
+                        padding-right:1.5rem ;}
+                    img{
+                        
+                        height: 2rem;
+                    }}
+                    .consulenti-suggeriti{
+                        display: flex;
+                        flex-wrap: wrap;
+                    .card-consulenti {
+                        display: flex;
+                        background-color: $white;
+                        height: 180px;
+                        border-radius:100px 15px 15px 100px;
+                        max-width: 550px ;
+                        
+                        margin: 10vh 10vh 10vh 0;
+                        figure{
+                            height: 200px;
+                            width: 200px;
+                            position: relative;
+                            top: -10px;
+                            background: url(../img/cv.jpg) no-repeat center center;
+                            background-size: cover;
+                            border-radius: 100%;
+                            transition: ease 0.1s;
+                            &:hover {
+                                transform: scale(1.05);
+                                                animation: pulse 0.6s ease 0.1s 1;
+                                                transition: transform .6s, ease;
+                                                border: solid $red 2px;
+                                                @keyframes pulse{
+                                                    from{ box-shadow: 0 0 0 0 rgba(221, 7, 7, 0.4)}
+                                                    to{box-shadow: 0 0 0 5px rgba(241, 25, 25, 0)}
+                                                }            
+                            }
+                        }
+                        
+                        .text-box-card-c{
+                            
+                            max-height:150px ;
+                            max-width: 250px;
+                            padding: 25px 0 25px 15px;
+                            h3{
+                                @include h3-card-article-bgw;
+                                font-size: 1.2rem;
+                                text-transform: uppercase;
+                                a{color: $dark-grey;
+                                 &:hover{color: $red;
+                                        transition: color .3s ease;}}
+                            }
+                            p a{ color:$black;
+                                font-size: 1.2rem;
+                                &:hover{color: $red;
+                                    transition: color .3s ease;}}
+                            .intro-consulenti-card{ 
+                                @include p-default-bgw;
+                                font-size: 0.9rem;
+                                padding-top: 0.6rem;
+                            }
+                           
+                        }
+                        .circle{ 
+                            position: relative;
+                            left:15px;
+                            top:-15px;
+                            background-color: $white;
+                            border-radius: 50%;
+                            height: 50px;
+                            width: 50px;
+                            box-shadow: -3px 3px 10px #42424221 ;
+                            // border: solid 1px coral;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .fab{
+                           
+                                color: $red;}
+                                
+                            &:hover{ 
+                                background-color: $red;
+                                .fab{color:$white;}
+                                transform: scale(1.1);
+                                transition: ease-in 0.3s;
+                            }
+                           
+                            }
+                       
+                        }
+                    }
+            
+        }
+
+   }
+ 
+} 

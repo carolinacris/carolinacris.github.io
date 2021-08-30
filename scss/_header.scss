@@ -1,0 +1,37 @@
+header{
+
+    
+    // padding-top: 3vh;
+    // margin-top: 3vh;
+    // margin-left: 2.5rem;
+    ul{
+        position: absolute;
+            top:0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding: 2rem 4rem  ;
+        width: 98.9vw;
+        
+        li{
+            list-style: none;
+            img{
+                height: 50px;
+                width: auto;
+            }
+   
+        }
+        .ham{
+            span{
+
+                    #menu{  
+                        font-family: $primary-font;
+                        // margin-right: 8vw;
+                        letter-spacing: 0.15rem;}
+                  
+            }
+        }  
+    }
+}
+

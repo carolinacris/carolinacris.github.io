@@ -1,0 +1,47 @@
+.home-container1{
+    @include grid-column(grid, 1fr 1fr 1fr, space-around);
+    align-items: center;
+    height: 100vh;
+    
+    .text-box1{
+        @include grid-col-startend (2,3);
+        margin-top: -100px;
+        h2{
+            padding-bottom: 3rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+    } 
+    .icon-box {
+        @include grid-col-startend (3,4);
+        height: 30px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+    } 
+ }
+
+ .home-container2{
+     @include grid-column (grid, 3fr 6fr 2.7fr 1.3fr, space-around);
+     height: 100vh;
+     
+     h1{
+         @include grid-col-startend (2,4);
+         @include h1-primary;
+         margin-bottom: -20vh;
+     }
+     figure{
+         background:url(../img/homeimg.jpg) no-repeat center center ;
+         background-size: cover;
+         @include grid-col-startend (2,3);
+         border-radius: 15px;
+         height: 350px;
+
+     }
+     p{
+        @include grid-col-startend (3,4);
+        margin-left: 2rem ;
+        @include p-default;
+     }
+ }

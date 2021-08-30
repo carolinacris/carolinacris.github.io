@@ -1,0 +1,68 @@
+#notfound{
+
+    main{
+        text-align: center;
+        padding: 13vh 0;
+        
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            
+            figure{
+                background: url(../img/ciccia.jpg) no-repeat center center;
+                background-size: cover;
+                height: 20rem; 
+                width: 20rem;
+                border-radius: 100%;
+                border: solid 4px $white;
+                -webkit-box-shadow: -1px 5px 43px -18px #474747c4;
+                -moz-box-shadow: -1px 5px 43px -18px #474747a3;
+                -o-box-shadow: -1px 5px 43px -18px #47474792;
+                box-shadow: -1px 5px 43px -18px #4747475a;
+               transition: ease 0.1s;
+                &:hover {
+                    transform: scale(1.1); 
+                    border: solid $red 4px; 
+                    transition: 0.3s ease;
+                    
+
+                }
+
+            }
+            p{
+                font-size: 20rem;
+                font-weight: 500;
+            }
+        }
+        .text-box{
+            padding-bottom:2rem ;
+        }
+        .call-action{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .tertiary-button{
+                background: $white;
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 0;
+                outline: none;
+                transition: ease 0.1s;
+                img{height: 20px; width: auto;}
+                &:hover{
+                    transform:scale(1.2);
+                    border: 1px $red solid;
+                    transition: transform .3s ease, border-width .3s;
+                }
+
+            }
+            p{margin-top: 1.3rem;}
+        }
+    }
+}

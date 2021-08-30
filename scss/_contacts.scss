@@ -1,0 +1,186 @@
+.contacts-section{
+    height: 100vh;
+    .contacts-container{
+        @include grid-column (grid, 2fr 3fr 5fr , space-around);
+        column-gap: 3rem;
+        padding-top: 20vh;
+        
+        .form-container{
+            background-color: $white-sfondo;
+            @include grid-col-startend (2,3);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 2rem;
+            h3{ 
+                color:$dark-grey;
+                margin:2rem 3rem 0 3rem;
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                margin:1.5rem 3.2rem 0 3.2rem;
+                label{
+                    @include label;
+                    padding: 0.5rem 0;
+                }
+                input{
+                    outline: 0;
+                    border: 0;
+                    @include placeholder;
+                    border-radius: 7px;
+                    padding: 0.5rem 0 0.5rem 0.5rem;
+                    margin-bottom: 1rem;
+                    background-color: #fff;
+                }
+                ::placeholder{
+                   @include placeholder;
+                }
+                .input--2{
+                    padding: 0.5rem 0 6rem 0.5rem ;
+                    margin-bottom: 0.7rem;
+                }
+            }
+            .privacy{
+                margin-left: 3rem;
+                display: flex;
+                align-items: center;
+                .custom-button{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin: 0 px 15px 20px 0;
+                    img{
+                        height: 12px;
+                        margin-right: 8px;
+                    }
+                    label{
+                        @include button;
+                        padding-right: 10px;
+                    }
+                    
+                    
+                }
+                .c-b{
+                    
+                    input{
+                        --active: #fff;
+                        --active-inner: #c31a19;
+                        --focus: 2px rgba(182, 50, 26, 0.3);
+                        --border: #BBC1E1;
+                        --border-hover: #fe2727;
+                        --background: #fff;
+                        --disabled: #c31a19;
+                        --disabled-inner: #E1E6F9;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        height: 15px;
+                        width: 15px;
+                        outline: none;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        border: 1px solid var(--bc, var(--border));
+                        background: var(--b, var(--background));
+                        transition: background-color .3s, border-color .3s, box-shadow .2s;
+                        &:checked {
+                          --b: var(--active);
+                          --bc: var(--active);
+                          --d-o: .3s;
+                          --d-t: .6s;
+                          --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+                          content: '';
+                          background-color: var(--active-inner);
+                          border-radius: 50%;
+                          width: 16px;
+                          height: 16px;
+                          z-index: 1;
+                          
+                        }
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            transform: translate(2.5px, 3px);
+                            background-color: var(--active);
+                            border-radius: 50%;
+                            width: 8px;
+                            height: 8px;
+                            z-index: 1;
+                        }
+
+                        &:disabled {
+                          background-color:  var(--disabled);
+                          &:checked {
+                            --b: var(--disabled-inner);
+                            --bc: var(--border);
+                        
+                          }
+                        }
+                        &:hover {
+                          &:not(:checked) {
+            
+                            &:not(:disabled) {
+                              --bc: var(--border-hover);
+                            }
+                          }
+                        }
+                        &:focus {
+                          box-shadow: 0 0 0 var(--focus);
+                        }
+                        
+                    } //chiude input
+                    
+                }
+            }
+            a {
+                align-self: flex-end;
+                margin-top: 2rem;
+                margin-right: 3rem;
+                button{
+                 @include secondary-button;
+                 }
+             }
+
+
+           
+        } //chiude form container
+        .contacts-container-text-box{ 
+            @include grid-col-startend(3,4);
+            width: 20vw;
+            margin: 0 auto;
+            h3{                
+                color:$grey;
+                font-size: 1.8rem;
+                font-weight: 400;}
+            p:first-of-type{padding-top: 3rem;}
+            p:last-of-type{font-size: 0.8rem; font-weight: 200;color:$unactive; padding-top: 4rem;}
+            p{ font-size: 1.4rem;
+                font-weight: 200;}
+            li{
+                list-style: none;
+                div{font-size: 1rem; color:$red; padding-right: 2rem;}
+                }
+            .social{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 1rem 0;
+                    a{font-size: 1rem;
+                    color: $red;
+                    
+                    &:hover{
+                                color: rgb(114, 24, 24);
+                                transition: color .3s;
+                            }
+                        }
+                        div{&:hover{color: rgb(114, 24, 24);
+                                    transition: color .3s;}}
+                    }
+                
+            
+            li, p, h3{padding-bottom: 1rem;}
+        }
+    } //chiude contacts conatiner
+
+} //deve stare per ultimo

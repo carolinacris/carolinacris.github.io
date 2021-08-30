@@ -1,0 +1,94 @@
+.team-section{
+    background-color: $white-sfondo;
+    
+
+    .team-container{
+        @include grid-column (grid, 3fr 8.7fr 1.3fr, space-around);
+        height: 100vh;
+        img{width: 20px; margin:0 auto; align-self: center;}
+
+        .box-team{
+            @include grid-col-startend (2,3);
+            @include grid-column (grid, repeat(3, 1fr), space-around);
+            align-self: center;
+            column-gap: 5rem;    
+            p{
+                color: $black;
+            }
+            .empty{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .custom-button{
+                    @include custom-button;
+                    margin:1rem 0 0 0;}
+            }
+           
+            .team-card{
+                padding-top: 125px;
+                .imgbox{
+                    display: flex;
+                    flex-direction: column;
+                    figure{background: url(../img/cv.jpg)no-repeat center center;
+                            background-size: cover;
+                            height: 250px;
+                            width: 250px;
+                            border-radius:50%;
+                            border:0;
+                            outline:0;
+                            transition: ease 0.1s;
+                        }
+                    .tertiary-button{
+                        background: $white;
+                        height: 125px;
+                        width: 125px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // position: relative;
+                        z-index: 1;
+                        order:-1;
+                        align-self: flex-end;
+                        margin-bottom: -250px;
+                        border: 0;
+                        outline: none;
+                        transition: ease 0.1s;
+                        img{height: 20px; width: auto;}
+                        &:hover{
+                            transform:scale(1.2);
+                            border: 1px $red solid;
+                            transition: transform .3s ease, border-width .3s;
+                        }
+
+                    }
+                        &:hover{
+                            figure{ transform: scale(1.2);
+                                    animation: pulse 0.6s ease 0.1s 1;
+                                    transition: transform .6s, ease;
+                                
+                                    @keyframes pulse{
+                                                    from{ box-shadow: 0 0 0 0 rgba(221, 7, 7, 0.4)}
+                                                    to{box-shadow: 0 0 0 20px rgba(241, 25, 25, 0)}
+                                                }
+                                
+                                            }
+                        }
+                }
+                .text-box-card{padding-top: 3rem;}
+                h3{
+                    @include h3-card-article-bgw;
+                    padding-bottom:0.6rem;
+                    text-transform: uppercase;
+                    a{color: $dark-grey;
+                     &:hover{color: $red;
+                            transition: color .3s ease;}}
+                }
+                p a{ color:$black;
+                    &:hover{color: $red;
+                        transition: color .3s ease;}}
+           
+            } 
+        }
+    }
+}

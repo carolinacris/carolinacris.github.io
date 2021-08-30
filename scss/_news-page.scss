@@ -1,0 +1,51 @@
+#news-page2{
+    h2{margin: 0 5vw;
+        padding-top: 20vh;}
+    .grid{
+        margin: 0 5vw;
+        padding: 10vh 0;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, minmax(33.333%,1fr));
+        grid-auto-rows: 20px;
+        
+    article{
+        width: auto;
+        border-radius: 15px;
+        background-color: $white;
+        
+        figure{
+            height: 30vh ;
+            width: auto;
+            border-radius: 10px;
+            margin: 15px;
+            background: url(../img/consulenza.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .text-box-card{
+            
+            margin: 0 15px;
+            
+            h3{
+                @include h3-card-article-bgw;
+                padding-bottom:0.6rem;
+                padding-top: 1rem;
+                .h3{color: $black;
+                    &:hover{
+                     color   :$red;
+                    transition: ease 0.2s;
+                    }}
+            }
+            p{@include p-card-bgw;
+            }
+        } 
+        .custom-button{
+            @include custom-button;
+            
+        }
+      }
+  
+
+    } //chiude il wrapper
+}
+

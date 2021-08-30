@@ -1,0 +1,134 @@
+#cv{
+    background-color: $white-sfondo;
+    header{ul{
+        position:absolute;
+        width: 98.9vw;
+    }}
+    main{    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            
+        .cv-intro{
+            margin-top: 25vh;
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            figure{
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            background: url(/img/cv.jpg) no-repeat center center;
+            background-size: cover;
+            border: 4px $white solid;
+            &:hover{
+                box-shadow: 0px 0px 6px rgba(173, 6, 6, 0.315);
+                transition: box-shadow .4s ease;
+                }
+            }
+            .text-box{
+            width: 40vw;
+            .category{@include label; 
+                text-transform: uppercase;
+                &:hover{
+                    color: $red;
+                    cursor: pointer;
+                    transition: color .3s ease;
+               }}
+            p{@include p-default-bgw; padding: 2rem 0; line-height: 1.8rem;}
+            h2{@include h2-bgw; font-weight: 200; padding-top: 1.5rem;}
+            }
+         }
+         
+         h3{ @include h3;
+            color:$red;
+            padding-bottom: 1rem;}
+        p{@include p-card-bgw;
+                font-size: 1.05rem;
+                line-height: 19px;}
+    
+    .cv-cards-container{
+        @include grid-column(grid, 1fr 1fr, space-around);
+        width: 80vw;
+        height: auto;
+        margin: 10vh auto 0;
+        background-color: $white;
+        border-radius: 10px;
+        padding: 3rem;
+    
+        .cv-card{
+            padding-left: 2rem;
+            li{list-style-type: none;
+                display: flex;
+                align-items: flex-start;
+                padding: 0.5rem 0;}
+            
+            .year{@include label; font-weight: 600; margin-right: 0.6rem}
+            .studio-box, .lavoro-box{
+                .scuola, .azienda{font-weight: 500;}
+                .titolo-studio, .impiego, .impiego-intercom{color:$dark-grey;
+                                font-size: 1rem;}
+            }
+        
+        
+    }
+
+}
+.intercom-box{
+    width: 80vw;
+    height: auto;
+    margin: 5vh auto;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 3rem;
+}
+.contattami{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 10vh auto;
+    p{@include p-default-bgw; font-size: 2rem;}
+    .call-action-box{
+        display: flex;
+        flex-direction: column;
+        
+        .custom-button:nth-of-type(1){
+            padding-top: 2rem;
+            span{a:hover{ color: $black;}}
+         img{margin-left: 5px;}
+        }
+        .custom-button:nth-of-type(2){
+            img{transform: scaleX(-1);}
+           }
+    }
+    .cv-contact-text-box{
+        
+        margin: 0 auto;
+
+        .social{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+                li{ list-style: none; 
+                    div {padding-right: 1rem;}}
+                a{font-size: 1rem;
+                color: $dark-grey;
+                &:hover{
+                            color: $red;
+                            transition: color .3s;
+                        }
+                    }
+                    
+                }
+            
+        
+        li, p, h3{padding-bottom: 1rem;}
+    }
+    
+} //chiude section contattami
+
+    } //chiude il main
+
+}

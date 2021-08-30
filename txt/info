@@ -1,0 +1,107 @@
+Apertura Regular
+
+font-family: apertura, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Apertura Obliq
+
+font-family: apertura, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Apertura Medium
+
+font-family: apertura, sans-serif;
+
+font-weight: 500;
+
+font-style: normal;
+
+
+Apertura Medium Obliq
+
+font-family: apertura, sans-serif;
+
+font-weight: 500;
+
+font-style: italic;
+
+
+Apertura Bold
+
+font-family: apertura, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Apertura Bold Obliq
+
+font-family: apertura, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Apertura Black
+
+font-family: apertura, sans-serif;
+
+font-weight: 800;
+
+font-style: normal;
+
+
+Apertura Black Obliq
+
+font-family: apertura, sans-serif;
+
+font-weight: 800;
+
+font-style: italic;
+
+
+Apertura Condensed
+
+font-family: apertura-condensed, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Apertura Condensed Obliq
+
+font-family: apertura-condensed, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Apertura Bold Condensed
+
+font-family: apertura-condensed, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Apertura Bold Condensed Obliq
+
+font-family: apertura-condensed, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+

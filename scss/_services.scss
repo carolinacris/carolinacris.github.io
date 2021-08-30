@@ -1,0 +1,80 @@
+.services-section {
+    background-color: $white-sfondo;
+    
+
+    .service-container-1{
+    height: 100vh;
+    img{width: 20px; margin:0 auto; align-self: center;}
+    // box-sizing: content-box;
+    @include grid-column (grid, 3fr 8.7fr 1.3fr, space-around);
+    .box-cards{
+        align-self: center;
+        @include grid-col-startend (2,3);
+        @include grid-column (grid, repeat(3, 1fr), space-around);
+        column-gap: 1rem;
+        article{
+            background-color: $white;
+            height: 60vh;
+            width: auto;
+            border-radius: 15px;
+            figure{
+                height: 30vh ;
+                border-radius: 10px;
+                margin: 5px;
+                display: flex;
+                align-items: center;
+            }
+
+            .custom-button{
+                @include custom-button;
+                margin: 20px 40px;
+            }
+        }
+        .empty{
+            background-color: $black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                margin: 10vh 3vw 0 3vw;
+            }
+            .custom-button{
+                a{color: $white; &:hover{ color: $red;transition: ease 0.2s;}}
+                align-self: flex-start;
+                margin-left: 3vw;
+            }
+        }
+    }
+} //chiude container2
+        .service-container-2{
+        padding-top: 10vh;    
+        @include grid-column (grid, 3fr 2.7fr 6fr   1.3fr , space-around);
+        height: 100vh;
+        h1{
+            @include grid-col-startend (2,4);
+            @include h1-primary-bgw;
+           padding-bottom: 3rem;
+            
+    }
+    p{
+        @include grid-col-startend (2,3);
+        
+        @include p-default-bgw;
+        grid-row-start: 2;
+
+
+     }
+    #model-viewer {
+        @include grid-col-startend (3,4);
+        grid-row-start: 2;
+        display: flex;
+        justify-content: center;
+        model-viewer{
+            height: 500px;
+            width: 500px;
+        }
+    }
+
+  }
+
+}

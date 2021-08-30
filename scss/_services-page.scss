@@ -1,0 +1,75 @@
+#services-page{ 
+    
+    
+    main{
+    h2{@include h2-bgw;
+     
+    padding-bottom: 10vh;}
+    padding: 20vh  0;
+    display: flex;   
+    flex-direction: column;
+    margin: 0 5vw;
+        .container-services-page{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            max-width: none;
+            gap:20px;
+            .services-card-page{
+                transition: ease 0.1s;
+                flex-grow: 1.5;
+                width: 30%;
+                max-width: 490px;
+                min-width: 342px;
+                border-radius: 10px;
+                padding: 20px 0;
+                min-height: 540px;
+                // @media (max-width: 1670px ){
+                //     max-width: none;
+                // }
+                figure{
+                   padding: 40px 40px 70px 40px; 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                   model-viewer {height:25vh;
+                   }
+                }
+                
+                .text-box-card-1{
+                    
+                    display: flex;
+                    flex-direction: column;
+                    
+                  .custom-button{align-self: flex-end;
+                           
+                                 }
+                }
+
+           
+            } 
+
+        .services-card-page:nth-of-type(5):hover, .services-card-page:nth-of-type(1):hover {
+            transition: ease 0.3s;
+            background-color: $black;
+            transform: scale(1.01);
+            p, a, h3{ color: $white;}
+            a:hover{ color: $red;}
+        }
+        .services-card-page:nth-of-type(2):hover,  .services-card-page:nth-of-type(6):hover{
+            background-color: $white;
+            transition: ease 0.3s;
+            transform: scale(1.01);
+        }
+        .services-card-page:nth-of-type(3):hover, .services-card-page:nth-of-type(4):hover {
+            transition: ease 0.3s;
+            background-color: $red;
+            transform: scale(1.01);
+            p, a, h3{ color: $white;}
+            a:hover{color: $dark-grey;}
+            .custom-button img { filter: grayscale(100%);}
+        }
+
+        }
+}
+}

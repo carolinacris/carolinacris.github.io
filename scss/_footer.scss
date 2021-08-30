@@ -1,0 +1,26 @@
+hr{ color: $dark-grey;
+    width: 90vw;
+    margin: 0 auto;
+    border: 0;
+    height: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    }
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    padding: 4rem 0 ;
+    div{
+        p:nth-child(1){
+            color: $red;
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem ;
+        }
+
+        
+    }
+    p{color:$black; width: 15vw;}
+    a{ color: $dark-grey;}
+}

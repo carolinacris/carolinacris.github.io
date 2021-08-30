@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intercom</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/favicon.svg" type=""/>
+    <link rel="stylesheet" href="https://use.typekit.net/spf7jpa.css">
+    <link rel="stylesheet" type="text/css" href="/fullPage.js-master/dist/fullpage.min.css" />
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://kit.fontawesome.com/a8f17e5631.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head> 
+<body id="service-single-page">
+        <!----------------------------------- HEADER------------------------------------------>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="./img/logo.svg" alt="intercom"></a></li>
+                    <!-- <li >
+                        <a href="" id="menu" class="menuToggle">menu</a>
+                    </li> -->
+                    <button class="ham">
+                        <span  class="menuIcon"><a href="" id="menu">menu</a></span>
+                        <span class="xIcon"><a href="">menu2</a></span>
+                    </button>
+                </ul> 
+                <ul class="menu">
+                    <li><a id="login" href="#">login</a></li>
+                    <li><a class="menuLink" href="#">About US</a></li>
+                    <li><a class="menuLink" href="#">Consulenti</a></li>
+                    <li><a class="menuLink" href="#">Servizi</a></li>
+                    <li><a class="menuLink" href="#">News</a></li>
+                    <li><a class="menuLink" href="#">Partners</a></li>
+                    <li><a class="menuLink" href="#">Contatti</a></li>
+                  </ul>
+            </nav>
+            
+        </header>
+        
+        <!---------------------------------FINE HEADER --------------------------------------->
+        <!----------------------------------  MAIN  --------------------------------------------->
+    <main>
+
+    <div class="container">
+            <div class="circle2">
+                <div class="fas fa-code"></div>
+            </div>
+                <h2>WEB DEVELOPMENT</h2>
+                <p class=" uno">Lo sviluppo Web è il lavoro coinvolto nello sviluppo di un sito Web per Internet o una intranet. Lo sviluppo Web può variare dallo sviluppo di una semplice pagina statica di testo normale a complesse applicazioni Web, attività elettroniche e servizi di social network.</p>
+   
+                <div class="content-container-service">
+                    <article class="services-card-page">
+                       <figure id="model-viewer">
+                            <model-viewer src="assets/poligono2.gltf" alt="mondo" auto-rotate   camera-controls ar ios-src="assets/poligono2.gltf"></model-viewer>
+
+                        </figure>
+                        <div class="text-box-card-1">
+                            <h3>BACK END</h3>
+                            <p>Parte della programmazione che permette l'effettivo funzionamento delle interazioni.</p>
+                        </div>
+                    </article>
+                    <article class="services-card-page">
+                       <figure id="model-viewer">
+                            <model-viewer src="assets/poligonopieno2.gltf" alt="mondo" auto-rotate   camera-controls ar ios-src="assets/poligonopieno2.gltf"></model-viewer>
+
+                        </figure>
+                        <div class="text-box-card-1">
+                            <h3>FRONT END</h3>
+                            <p>Parte della programmazione che permette l'effettivo funzionamento delle interazioni.</p>
+                        </div>
+            
+                    </article>
+                </div>
+                
+                <div class="box-suggeriti">
+                    <div class="title">
+                        <h2>CONSULENTI PROPOSTI</h2>
+                        <img src="img/arrow.svg" alt="arrow">
+                    </div>
+                   <div class="consulenti-suggeriti">
+                    <article class="card-consulenti">
+                        <figure class="img-profile"></figure>
+                        <div class="text-box-card-c">
+                            <h3><a href="#">CATEGORIA</a></h3>
+                            <p><a href="cv.html">Federico Cristino</a></p>
+                            <p class="intro-consulenti-card">The quick beown fox jumps over the lazy dog</p>
+                        </div>
+                        <div class="circle">
+                            <div class="fab fa-instagram"></div>
+                        </div>
+                    </article>
+                    <article class="card-consulenti">
+                        <figure class="img-profile"></figure>
+                        <div class="text-box-card-c">
+                            <h3><a href="#">CATEGORIA</a></h3>
+                            <p><a href="cv.html">Federico Cristino</a></p>
+                            <p class="intro-consulenti-card">The quick beown fox jumps over the lazy dog</p>
+                        </div>
+                        <div class="circle">
+                            <div class="fab fa-instagram"></div>
+                        </div>
+                    </article>
+                   </div>
+                </div>
+   
+   
+    </div>
+
+    </main>
+    <hr>
+    <footer>
+        <div>
+         <p>Intecom <br> Export Import srls
+             </p>
+              <p>P.IVA 03923670040</p>
+        </div>
+         <p>sede legale Via E.Milano 8, 12042, Bra (cn), Italia
+             <br>
+             tel. 3887772788
+             <br>
+             codice univoco P62QHVQ
+         </p>
+         <p>Developed by <br>
+             <a href="https://github.com/GiacomoTezza" target="_blank">Giacom Tezza</a> <br>
+             <a href="caragraphicdesign@gmail.com">Carolina Cristino</a>
+            </p>
+     </footer>
+    </body>
+    </html>

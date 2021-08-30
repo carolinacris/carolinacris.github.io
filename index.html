@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intercom</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/favicon.svg" type=""/>
+    <link rel="stylesheet" href="https://use.typekit.net/spf7jpa.css">
+    <script src="https://kit.fontawesome.com/a8f17e5631.js" crossorigin="anonymous"></script>
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+
+</head> 
+<body id="home">
+    <!----------------------------------- HEADER------------------------------------------>
+    <header>
+        <nav>
+            <ul class="fixed">
+                <li><a href=""><img src="./img/logo.svg" alt="intercom"></a></li>
+                <!-- <li >
+                    <a href="" id="menu" class="menuToggle">menu</a>
+                </li> -->
+                <button class="ham">
+                    <span  class="menuIcon"><a href="" id="menu">menu</a></span>
+                    <span class="xIcon"><a href="">menu2</a></span>
+                </button>
+            </ul> 
+            <ul class="menu">
+                <li><a id="login" href="#">login</a></li>
+                <li><a class="menuLink" href="#">About US</a></li>
+                <li><a class="menuLink" href="#">Consulenti</a></li>
+                <li><a class="menuLink" href="#">Servizi</a></li>
+                <li><a class="menuLink" href="#">News</a></li>
+                <li><a class="menuLink" href="#">Partners</a></li>
+                <li><a class="menuLink" href="#">Contatti</a></li>
+              </ul>
+        </nav>
+
+    </header>
+    
+    <!---------------------------------FINE HEADER --------------------------------------->
+    <!------------------------------------- MAIN ----------------------------------------->
+    <main>
+    <!------------------------------------- MENU ----------------------------------------->
+        <ul id="menu">
+            <li class="dot " ><a href="#welcome">Welcome</a></li>
+            <li class="dot" ><a href="#home2">Home</a></li>
+            <li class="dot" ><a href="#services">Services</a></li>
+            <li class="dot"><a href="#team">Consulenti</a></li>
+            <li class="dot"><a href="#news">News</a></li>
+            <li class="dot"><a href="#contacts">Contacts</a></li>
+        </ul>
+
+        <div class="container-fullp fullpage ">
+    <!-------------------------------------WELCOME --------------------------------------->
+
+        <section class="section welcome-section" id="welcome" data-label="welcome">
+            <figure><img src="img/logoredesteso.svg" alt=""></figure>
+        </section>
+
+    <!------------------------------------- HOME ----------------------------------------->
+        <section class="section home-section" id="home2" data-label="home2">
+            <div class="home-container1">
+                <div class="text-box text-box1">
+                    
+                        <h2>frase di presentazione azienda</h2>
+                        <p>A woman needs a man like a fish needs a bicycle. A woman needs a man like a fish needs a bicycle</p>
+                   
+                </div>
+               <div class="icon-box">
+                    <img src="./img/arrow.svg" alt="arrow" id="arrowslider">
+                </div>
+
+            </div> <!-- chiude container 1-->
+
+            <div class="home-container2">
+                <h1>Titolo testo di presentazione del metodo</h1>
+                <figure></figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque est quibusdam dolore provident excepturi quaerat aliquam dicta. Repudiandae ab, quia qui nobis et fugiat eius nihil ipsum ut nesciunt magnam.</p>
+            </div>   
+        </section> 
+        <!-- chiude la section home -->
+
+    <!------------------------------------- SERVIZI ----------------------------------------->
+
+        <section class="section services-section" id="services" data-label="services" >
+            <div class="service-container-1">
+                <div class="box-cards">
+                    <article class="empty">
+                        <p>piccola frase di presentazione dei servizi</p>
+                        <div class="custom-button">
+                            <img src="img/arrow.svg" alt=""><span><a href="services-page.html">Vedi tutti</a></span>
+                        </div>
+                    </article>
+                    <article>
+                        <figure id="piramide">
+                            <model-viewer src="assets/ciambella.gltf" alt="mondo" auto-rotate camera-orbit="30deg 20deg 2.5m"  camera-controls ar ios-src="assets/ciambella.gltf"></model-viewer>
+
+                        </figure>
+                        <div class="text-box-card-1">
+                            <h3>CONSULENZA</h3>
+                            <p>Spiegazione di che cosa fa effetivam...</p>
+                        </div>
+                        <div class="custom-button">
+                            <img src="img/arrow.svg" alt=""><span><a href="">Discover</a></span> 
+                        </div>
+                    </article>
+                    <article>
+                        <figure>
+                            <model-viewer src="assets/sfere.gltf" alt="mondo" auto-rotate camera-controls ar ios-src="assets/sfere.gltf"></model-viewer>
+                            
+                        </figure>
+                        <div class="text-box-card-1">
+                            <h3>CONSULENZA</h3>
+                            <p>Spiegazione di che cosa fa effetivam...</p>
+                        </div>
+                        <div class="custom-button">
+                            <img src="img/arrow.svg" alt=""><span><a href="">Discover</a></span>
+                        </div>
+                    </article>
+                </div><!-- chiude box-cards -->
+                <img src="/img/arrow.svg" alt="">
+            </div><!-- chiude container 1 -->
+             <!-- apre-contaier 2 -->
+            <div class="service-container-2">
+                <h1>Titolo testo di presentazione del metodo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque est quibusdam dolore provident excepturi quaerat aliquam dicta. Repudiandae ab, quia qui nobis et fugiat eius nihil ipsum ut nesciunt magnam.</p>
+
+                <div id="model-viewer">
+                    <model-viewer src="assets/mondo2.gltf" alt="mondo" auto-rotate camera-controls ar ios-src="assets/mondo2.gltf"></model-viewer>
+
+                </div>
+            </div>
+                <!--chiude container 2 -->
+        </section>
+    <!------------------------------------- TEAM ----------------------------------------->
+            <section class="section team-section" id="team" data-label="services">
+                <div class="team-container">
+                    <div class="box-team">
+                        <article class="empty empty--3">
+                            <p>Una frase di presentazione per i consulenti.</p>
+                            <div class="custom-button">
+                                <img src="img/arrow.svg" alt=""><span><a href="consulenti.html">Vedi tutti</a></span>
+                            </div>
+                        </article>
+                        <article class="team-card">
+                            <div class="imgbox">
+                                <figure></figure>
+                                <div class="tertiary-button"><a href="cv.html"><img src="img/arrow.svg" alt=""></a></div>    
+                            </div>
+                            <div class="text-box-card">
+                                <h3><a href="">categoria</a></h3>
+                                <p><a href="cv.html">Nome Cognome 1</a></p>
+                            </div>
+
+                        </article>
+                        <article class="team-card">
+                            <div class="imgbox">
+                                <figure></figure>
+                                <div class="tertiary-button"><img src="img/arrow.svg" alt=""></div>    
+                            </div>
+                            <div class="text-box-card">
+                                <h3><a href="">categoria</a></h3>
+                                <p><a href="">Nome Cognome</a></p>
+                            </div>
+
+                        </article>
+                    </div>
+                    <img src="img/arrowgray.svg" alt="">
+                </div>
+            </section>
+    <!------------------------------------- NEWS ----------------------------------------->
+
+        <section class="section news-section" id="news" data-label="news">
+         <div class="news-container">
+            <div class="box-news">
+                <article class="empty empty--2">
+                    <p>The latest news from our company.</p>
+                    <div class="custom-button">
+                        <img src="img/arrow.svg" alt=""><span><a href="news.html">Vedi tutti</a></span>
+                    </div>
+                </article>
+                <article> 
+                    <figure></figure>
+                    <div class="text-box-card">
+                        <h3><a class="h3"href="single.html"> Titolo un po lungo prova</a></h3>
+                        <p>Sottotitolo chd cerco di fare un po' più lungo per vedere come viene</p>
+                    </div>
+                    <div class="custom-button">
+                        <img src="img/arrow.svg" alt=""><span><a href="single.html">Leggi tutto</a></span>
+                    </div>
+                </article>
+                <article>
+                    <figure></figure>
+                        <div class="text-box-card">
+                            <h3>Altro titolo di altro articolo</h3>
+                            <p>Potremmo mettere un loop che prende gli ultimi due</p>
+                            <div class="custom-button">
+                                <img src="img/arrow.svg" alt=""><span>Leggi tutto</span>
+                            </div>
+                        </div> 
+                </article>
+            </div><!-- chiude box-cards -->
+        </div>  
+        </section>
+
+    <!------------------------------------- CONTATTI ----------------------------------------->
+
+        <section class="section contacts-section" id="contacts" data-label="contacts">
+            <div class="contacts-container">
+                <div class="form-container">
+                    <h3>Chiedi un preventivo per la tua consulenza</h3>
+                    <form action="#">
+                        <label class="email-label" for="email" id="emaillabel">Inserisci il tuo indirizzo e-mail</label>
+                        <input 
+                            type="email"
+                            name="mail"
+                            placeholder="esempio: giorgio@mail.it"
+                            required
+                        >
+                        <label class="label-message" for="message" >Scrivi qui il tuo messaggio</label>
+                        <input 
+                            type="text"
+                            name="message"
+                            placeholder="Ciao il mio progetto..."
+                            required
+                            class="input--2"
+                        >
+                    </form>
+                    <div class="privacy">
+                        <div class="custom-button">
+                            <img src="img/arrow.svg" alt=""><label for="">Privacy policy</label> 
+                        </div>
+                        <div class="c-b"><input id="c2" type="checkbox"></div>
+                    </div>
+                    <a href="#"><button>invia</button></a>
+                </div> <!-- chiude form-container -->
+                <div class="contacts-container-text-box">
+                    <h3>Altri contatti</h3>
+                    <ul>
+                        <li><div class="fas fa-phone-alt"></div> +39 388777788</li>
+                        <li><div class="fas fa-envelope"></div>info@intercom.com</li>
+                    </ul>
+                    <p>sede legale: via E.Milano 8, 12042, Bra (cn) Italy</p>
+                    <ul class="social">
+                        <li><a href="#"><div class="fab fa-facebook-f"></div></a></li>
+                        <li><a href="#"><div class="fab fa-instagram"></div></a></li>
+                        <li><a href="#"><div class="fab fa-twitter"></div></a></li>
+                        <li><a href="#"><div class="fab fa-whatsapp"></div></a></li>
+                    </ul>
+                    <p>p.i 03923670040 </p>
+                    <p>codice univoco P62QHVQ</p>
+                    <p>Credits: Carolina Cristino, Giacomo Tezza</p>
+                </div>
+            </div>
+        </section>
+       </div>
+    
+    </main>
+    <script>
+        var dots = document.querySelectorAll(".dot");
+     
+        dots.forEach(dot =>{
+            dot.addEventListener('click', function(){
+                dots.forEach(dt => dt.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+
+        
+    </script>
+</body>
+</html>

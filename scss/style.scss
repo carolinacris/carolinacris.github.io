@@ -1,0 +1,136 @@
+@import 'variables';
+@import 'reset';
+@import 'header';
+@import 'mixins';
+@import 'welcome';
+@import 'home';
+@import 'services';
+@import 'team';
+@import 'news';
+@import 'contacts';
+@import 'cv';
+@import 'single';
+@import 'menu-slide';
+@import 'footer';
+@import 'consulenti';
+@import 'services-page';
+@import 'service-single-page';
+@import 'news-page';
+@import 'partners';
+@import 'notfound';
+@import 'forms';
+html{
+    scroll-behavior: smooth; 
+}
+#home, #partners{ 
+    background-color: $black;
+    @include p-default;
+     
+}
+body{
+    background-color: $white-sfondo;
+    @include p-default-bgw;
+}
+.graybg {
+    background-color: $white-sfondo;
+    
+} 
+.fixed{
+    position: fixed;
+}
+a{
+    @include a-primary;
+    &:hover{
+        @include a-hover;
+    }
+    .active{ @include a-active;}
+}
+
+h2{ @include h2();}
+.custom-button{
+    @include custom-button;
+}
+
+main{
+
+        #menu{
+            position: fixed;
+            z-index: 1;
+            top: 25vh;
+            bottom: 0;
+            left: 5rem;
+            // margin: auto;
+            height: 350px;
+            // padding: 0;
+            li{
+                margin: 0.5rem 3rem;
+                list-style: none;
+                padding: 0.8rem 0;
+                
+                &.active{
+                    //questo modifica i pallini quando è attiva la classe active
+                    a{
+                        @include a-active;
+                        &:after{
+                            //questo crea il pallino pieno quando la classe è attiva
+                            content:"";
+                            position: absolute;
+                            top:10.5px;
+                            left: -27px;
+                            border-radius: 50%;
+                            width: 10px;
+                            height: 10px;
+                            background-color: $red;
+                            z-index: 2;
+                            transition: ease 0.2s;
+                        }
+            
+                    }
+           
+            }
+
+                a{
+                    position: relative;
+                    padding-left: 20px;
+                    &:before{
+                        //questo crea il pallino vuoto non attivo
+                        content:"";
+                        position: absolute;
+                        top:7px;
+                        left: -30px;
+                        border: 2px solid $unactive;
+                        border-radius: 50%;
+                        width: 13px;
+                        height: 13px;
+                        z-index: 1;
+               
+                    }
+                    
+                }
+                &:hover a::before{
+                    border: 2px solid $red;
+                    transition: ease 0.2s;
+                }
+                // before e after sono due span "contenitori invisibili"
+            }
+        }
+    }
+    .text-box-card-1{
+        // position: relative;
+        // z-index: 1;
+        // important!!---------------------------
+        // background-color:$white;
+        // important !!---------------------------
+        height: 15vh;
+        margin: 0 40px 0 0;
+        padding-left: 40px;
+        h3{
+            @include h3;
+            padding-bottom:0.6rem;
+            padding-top: 0.2rem;
+        }
+        p{@include p-default-bgw}
+    }
+  
+
+

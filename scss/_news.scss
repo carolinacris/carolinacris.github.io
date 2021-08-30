@@ -1,0 +1,64 @@
+.news-section {
+    background-color: $white-sfondo;
+    
+
+    .news-container{
+      height: 100vh;
+    // box-sizing: content-box;
+    @include grid-column (grid, 3fr 8.7fr 1.3fr, space-around);
+    .box-news{ 
+        margin: 20vh 0 0 0;
+        @include grid-col-startend (2,3);
+        @include grid-column (grid, repeat(3, 1fr), space-around);
+        column-gap: 1rem;
+        .empty{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            p{
+                color: $black;
+            }
+            .custom-button{
+
+                @include custom-button;
+            }
+        }
+        article{
+            height: 60vh;
+            width: auto;
+            border-radius: 15px;
+            figure{
+                height: 30vh ;
+                border-radius: 10px;
+                margin: 15px;
+                background: url(../img/consulenza.jpg) no-repeat center center;
+                background-size: cover;
+            }
+            .text-box-card{
+                
+                margin: 0 15px;
+                h3{
+                    @include h3-card-article-bgw;
+                    padding-bottom:0.6rem;
+                    padding-top: 1rem;
+                    .h3{color: $black;
+                        &:hover{
+                         color   :$red;
+                        transition: ease 0.2s;
+                        }}
+                }
+                p{@include p-card-bgw;
+                }
+            } 
+            .custom-button{
+                @include custom-button;
+                
+            }
+          } 
+        
+    
+    }
+} 
+       
+
+}

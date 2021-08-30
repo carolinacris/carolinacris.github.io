@@ -1,0 +1,48 @@
+.ham{
+    background: none;
+    border: none;
+    z-index: 100;
+}
+.xIcon{display: none;
+        z-index: 55;}
+.menu {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: $red;
+    color: $white-sfondo;
+    transform: translateY(100%);
+    transition: transform 0.2s;
+    list-style: none;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .menuLink{
+        @include menulink;
+        transition: 0.3s;
+        &:hover{
+            font-size: 6rem;
+            transition: ease, 0.3s;
+        }
+    }
+    #login{position: absolute;
+            top: 1rem;
+            left:2rem;
+            color: $black;
+            &:hover{
+                color: $white-sfondo;
+                transition: ease 0.2s;
+            }}
+} //chiude il menu
+
+.show{
+    transform: translateY(0) ;
+    transition: 0.5s, ease;
+    background-color: blue;
+}
