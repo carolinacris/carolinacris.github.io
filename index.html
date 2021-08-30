@@ -12,7 +12,6 @@
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
-
 </head> 
 <body id="home">
     <!----------------------------------- HEADER------------------------------------------>
@@ -63,17 +62,23 @@
 
     <!------------------------------------- HOME ----------------------------------------->
         <section class="section home-section" id="home2" data-label="home2">
-            <div class="home-container1">
-                <div class="text-box text-box1">
-                    
-                        <h2>frase di presentazione azienda</h2>
-                        <p>A woman needs a man like a fish needs a bicycle. A woman needs a man like a fish needs a bicycle</p>
+            <div class="home-container1 container">
+                <div class="text-box text-box1" id="slider"  >
+                      
+                            <div class="slide ">
+                            <h2>frase di presentazione azienda</h2>
+                            <p>A woman needs a man like a fish needs a bicycle. A woman needs a man like a fish needs a bicycle</p>
+                            </div>
+                            <div class="slide">
+                                <h2>Salagadua magica bula</h2>
+                                <p>bibidi bobidy boo.</p>
+                            </div>
                    
                 </div>
-               <div class="icon-box">
+               <!-- <div class="icon-box" id="arrow-slider">
                     <img src="./img/arrow.svg" alt="arrow" id="arrowslider">
-                </div>
-
+                </div> -->
+                <button id="button" ><img src="./img/arrow.svg" id="arrowslider" alt="" ></button>
             </div> <!-- chiude container 1-->
 
             <div class="home-container2">
@@ -260,18 +265,7 @@
        </div>
     
     </main>
-    <script>
-        var dots = document.querySelectorAll(".dot");
-     
-        dots.forEach(dot =>{
-            dot.addEventListener('click', function(){
-                dots.forEach(dt => dt.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-
-
-        
-    </script>
+    <script src="script.js"></script>
+    <script src="bootstrap.js"></script>
 </body>
 </html>
