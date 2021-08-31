@@ -3,9 +3,10 @@
     align-items: center;
     height: 100vh;
     
-    .text-box1{
+    .text-box1{ 
         @include grid-col-startend (2,3);
         margin-top: -100px;
+
         h2{
             padding-bottom: 3rem;
         }
@@ -13,12 +14,18 @@
             font-size: 2rem;
         }
     } 
-    .icon-box {
+    button {
         @include grid-col-startend (3,4);
         height: 30px;
         width: auto;
         display: flex;
         justify-content: center;
+        background: none;
+        border: none;
+        img{height: 30px;}
+        transition: all 0.1s ease;
+        
+        &:active{transform: scale(0.95);}
     } 
  }
 
@@ -45,3 +52,28 @@
         @include p-default;
      }
  }
+
+#slider{
+    
+    overflow-x: hidden;
+    display: flex;
+    
+    width: 32vw;
+  
+   
+    // &::-webkit-scrollbar{
+    //    display: none;
+    // }
+    .slide{ 
+        justify-self: center;
+        width: 33vw;
+        transition: ease 0.3s;
+        padding-right: 10vw;
+        &.next{
+           padding-right: 0;
+            transition: ease 0.3s;
+            transform: translateX(-120%);
+        }
+    }
+ 
+}
