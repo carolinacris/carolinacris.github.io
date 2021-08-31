@@ -1,9 +1,8 @@
 var dots = document.querySelectorAll(".dot");
-var out= document.querySelector('body');
 const slides =document.querySelectorAll('.slide');
-const totalSlides = slides.length;
 var button = document.getElementById("button");
-
+var buttonSlider = document.querySelectorAll('[data-slider="button"]');
+var slider = document.querySelectorAll('.slider');
 dots.forEach(dot =>{
     dot.addEventListener('click', function(){
         dots.forEach(dt => dt.classList.remove('active'));
@@ -11,8 +10,26 @@ dots.forEach(dot =>{
     });
 });
 
-console.log(totalSlides);
-// console.log(slides);
+
+
+console.log(buttonSlider);
+console.log(slider);
+
+buttonSlider.forEach(
+    but =>{ but.addEventListener('click', function(){
+        slider.forEach(
+            slide =>{slide.classList.toggle('scroll');}
+        )
+    });
+});
+
+
+// buttonServices.addEventListener('click',function(){
+//     console.log('ci siamo');
+//     slider.classList.toggle('scroll');
+
+// });
+
 
 
    
@@ -27,4 +44,4 @@ slides.forEach(
 
 
 
-
+ 

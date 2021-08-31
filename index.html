@@ -100,22 +100,50 @@
                             <img src="img/arrow.svg" alt=""><span><a href="services-page.html">Vedi tutti</a></span>
                         </div>
                     </article>
-                    <article>
-                        <figure id="piramide">
-                            <model-viewer src="assets/ciambella.gltf" alt="mondo" auto-rotate camera-orbit="30deg 20deg 2.5m"  camera-controls ar ios-src="assets/ciambella.gltf"></model-viewer>
+                    <div class="wrapper">
+                        <div class="slider">
+                            <article>
+                                <figure id="ciambella">
+                                    <model-viewer src="assets/ciambella.gltf" alt="mondo" auto-rotate camera-orbit="30deg 20deg 2.5m"  camera-controls ar ios-src="assets/ciambella.gltf"></model-viewer>
 
-                        </figure>
-                        <div class="text-box-card-1">
-                            <h3>CONSULENZA</h3>
-                            <p>Spiegazione di che cosa fa effetivam...</p>
-                        </div>
-                        <div class="custom-button">
-                            <img src="img/arrow.svg" alt=""><span><a href="">Discover</a></span> 
-                        </div>
+                                </figure>
+                                <div class="text-box-card-1">
+                                    <h3>CONSULENZA</h3>
+                                    <p>Spiegazione di che cosa fa effetivam...</p>
+                                </div>
+                                <div class="custom-button">
+                                    <img src="img/arrow.svg" alt=""><span><a href="">Discover</a></span> 
+                                </div>
+                            </article>
+                            <article>
+                                <figure>
+                                    <model-viewer src="assets/sfere.gltf" alt="mondo" auto-rotate camera-controls ar ios-src="assets/sfere.gltf"></model-viewer>
+                                    
+                                </figure>
+                                <div class="text-box-card-1">
+                                    <h3>CONSULENZA</h3>
+                                    <p>Spiegazione di che cosa fa effetivam...</p>
+                                </div>
+                                <div class="custom-button">
+                                    <img src="img/arrow.svg" alt=""><span><a href="">Discover</a></span>
+                                </div>
+                        </article>
+                        <article>
+                            <figure>
+                                <model-viewer src="assets/piramidedoppia.gltf" alt="mondo" auto-rotate camera-controls ar ios-src="assets/piramidedoppia.gltf"></model-viewer>
+                                
+                            </figure>
+                            <div class="text-box-card-1">
+                                <h3>CONSULENZA</h3>
+                                <p>Spiegazione di che cosa fa effetivam...</p>
+                            </div>
+                            <div class="custom-button">
+                                <img src="img/arrow.svg" alt=""><span><a href="">Discover</a></span>
+                            </div>
                     </article>
                     <article>
                         <figure>
-                            <model-viewer src="assets/sfere.gltf" alt="mondo" auto-rotate camera-controls ar ios-src="assets/sfere.gltf"></model-viewer>
+                            <model-viewer src="assets/sfera.gltf" alt="mondo" auto-rotate camera-controls ar ios-src="assets/sfera.gltf"></model-viewer>
                             
                         </figure>
                         <div class="text-box-card-1">
@@ -125,9 +153,12 @@
                         <div class="custom-button">
                             <img src="img/arrow.svg" alt=""><span><a href="">Discover</a></span>
                         </div>
-                    </article>
+                   </article>
+                          </div>
+                     </div> <!-- wrapper -->
                 </div><!-- chiude box-cards -->
-                <img src="/img/arrow.svg" alt="">
+                <button data-slider="button"><img src="./img/arrow.svg" id="arrowslider" alt="" ></button>
+
             </div><!-- chiude container 1 -->
              <!-- apre-contaier 2 -->
             <div class="service-container-2">
@@ -151,32 +182,59 @@
                                 <img src="img/arrow.svg" alt=""><span><a href="consulenti.html">Vedi tutti</a></span>
                             </div>
                         </article>
-                        <article class="team-card">
-                            <div class="imgbox">
-                                <figure></figure>
-                                <div class="tertiary-button"><a href="cv.html"><img src="img/arrow.svg" alt=""></a></div>    
-                            </div>
-                            <div class="text-box-card">
-                                <h3><a href="">categoria</a></h3>
-                                <p><a href="cv.html">Nome Cognome 1</a></p>
-                            </div>
+                        <div class="wrapper">
+                            <div class="slider">
+                                    <article class="team-card">
+                                        <div class="imgbox">
+                                            <figure></figure>
+                                            <div class="tertiary-button"><a href="cv.html"><img src="img/arrow.svg" alt=""></a></div>    
+                                        </div>
+                                        <div class="text-box-card">
+                                            <h3><a href="">categoria</a></h3>
+                                            <p><a href="cv.html">Nome Cognome 1</a></p>
+                                        </div>
 
-                        </article>
-                        <article class="team-card">
-                            <div class="imgbox">
-                                <figure></figure>
-                                <div class="tertiary-button"><img src="img/arrow.svg" alt=""></div>    
-                            </div>
-                            <div class="text-box-card">
-                                <h3><a href="">categoria</a></h3>
-                                <p><a href="">Nome Cognome</a></p>
-                            </div>
+                                    </article>
+                                    <article class="team-card">
+                                        <div class="imgbox">
+                                            <figure></figure>
+                                            <div class="tertiary-button"><img src="img/arrow.svg" alt=""></div>    
+                                        </div>
+                                        <div class="text-box-card">
+                                            <h3><a href="">categoria</a></h3>
+                                            <p><a href="">Nome Cognome</a></p>
+                                        </div>
 
-                        </article>
-                    </div>
-                    <img src="img/arrowgray.svg" alt="">
+                                    </article>
+                                    <article class="team-card">
+                                        <div class="imgbox">
+                                            <figure></figure>
+                                            <div class="tertiary-button"><img src="img/arrow.svg" alt=""></div>    
+                                        </div>
+                                        <div class="text-box-card">
+                                            <h3><a href="">categoria</a></h3>
+                                            <p><a href="">Nome Cognome3</a></p>
+                                        </div>
+
+                                    </article>
+                                    <article class="team-card">
+                                        <div class="imgbox">
+                                            <figure></figure>
+                                            <div class="tertiary-button"><img src="img/arrow.svg" alt=""></div>    
+                                        </div>
+                                        <div class="text-box-card">
+                                            <h3><a href="">categoria</a></h3>
+                                            <p><a href="">Nome Cognome4</a></p>
+                                        </div>
+
+                                    </article>
+                                </div>
+                            </div> <!-- chiude wrapper-->
+                    </div> <!-- chiude wrapper-->
+                    <button data-slider="button"><img src="img/arrowgray.svg" alt=""></button>
                 </div>
             </section>
+            
     <!------------------------------------- NEWS ----------------------------------------->
 
         <section class="section news-section" id="news" data-label="news">
@@ -266,6 +324,6 @@
     
     </main>
     <script src="script.js"></script>
-    <script src="bootstrap.js"></script>
+    
 </body>
 </html>

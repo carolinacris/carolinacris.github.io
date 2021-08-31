@@ -26,6 +26,7 @@
            
             .team-card{
                 padding-top: 125px;
+                
                 .imgbox{
                     display: flex;
                     flex-direction: column;
@@ -37,6 +38,7 @@
                             border:0;
                             outline:0;
                             transition: ease 0.1s;
+                            
                         }
                     .tertiary-button{
                         background: $white;
@@ -46,8 +48,9 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        // position: relative;
-                        z-index: 1;
+                        position: relative;
+                        left: 15px;
+                        z-index: 10;
                         order:-1;
                         align-self: flex-end;
                         margin-bottom: -250px;
@@ -59,6 +62,7 @@
                             transform:scale(1.2);
                             border: 1px $red solid;
                             transition: transform .3s ease, border-width .3s;
+                            
                         }
 
                     }
@@ -75,7 +79,8 @@
                                             }
                         }
                 }
-                .text-box-card{padding-top: 3rem;}
+                .text-box-card{padding-top: 3rem;
+                                margin-left: 7px;}
                 h3{
                     @include h3-card-article-bgw;
                     padding-bottom:0.6rem;
@@ -91,4 +96,31 @@
             } 
         }
     }
+    button{
+        background: none;
+        border: none;
+        img{height: 30px;}
+        transition: all 0.1s ease;
+        
+        &:active{transform: scale(0.90);}
+    }
+    .wrapper{
+            
+        @include grid-col-startend(2,4);
+       width: 650px;
+        overflow: hidden;
+
+        .slider{
+            display: flex;
+            gap: 5rem;
+            padding: 2rem;
+            transition: ease 0.4s;
+            
+            &.scroll{
+                 transition: ease 0.4s;
+                 transform: translateX(-100%);
+            
+             }
+       }
+        }
 }
