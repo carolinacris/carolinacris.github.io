@@ -4,29 +4,35 @@
     .grid{
         margin: 0 5vw;
         padding: 10vh 0;
-        display: grid;
+        // display: grid;
         grid-gap: 10px;
-        grid-template-columns: repeat(3, minmax(33.333%,1fr));
-        
+        // grid-template-columns: repeat(3, minmax(33.333%,1fr));
+        column-count: 3;
         height: fit-content;
         
     article{
         width: auto;
         border-radius: 15px;
-        background-color: $white;
+       
         height: fit-content;
+        break-inside: avoid;
+        padding-top: 3px;
+        margin-bottom: 20px;
         figure{
             height: 30vh ;
             width: auto;
             border-radius: 10px;
             margin: 15px;
+
             background: url(../img/consulenza.jpg) no-repeat center center;
             background-size: cover;
+            
         }
         .text-box-card{
             
-            margin: 0 15px;
-            
+            margin: 0 2rem;
+            display: flex;
+            flex-direction: column;
             h3{
                 @include h3-card-article-bgw;
                 padding-bottom:0.6rem;
@@ -42,7 +48,12 @@
         } 
         .custom-button{
             @include custom-button;
-            
+            align-self: flex-end;
+            padding-bottom: 1rem;
+        }
+        &:hover{
+            background-color: $white;
+            transition: ease 0.2s;
         }
       }
   
