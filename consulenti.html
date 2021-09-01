@@ -14,31 +14,38 @@
 	
 </head> 
 <body id="consulenti">
-        <!----------------------------------- HEADER------------------------------------------>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><img src="./img/logo.svg" alt="intercom"></a></li>
-                    <!-- <li >
-                        <a href="" id="menu" class="menuToggle">menu</a>
-                    </li> -->
-                    <button class="ham">
-                        <span  class="menuIcon"><a href="" id="menu">menu</a></span>
-                        <span class="xIcon"><a href="">menu2</a></span>
-                    </button>
-                </ul> 
-                <ul class="menu">
-                    <li><a id="login" href="#">login</a></li>
-                    <li><a class="menuLink" href="#">About US</a></li>
-                    <li><a class="menuLink" href="#">Consulenti</a></li>
-                    <li><a class="menuLink" href="#">Servizi</a></li>
-                    <li><a class="menuLink" href="#">News</a></li>
-                    <li><a class="menuLink" href="#">Partners</a></li>
-                    <li><a class="menuLink" href="#">Contatti</a></li>
-                  </ul>
-            </nav>
-            
-        </header>
+    <!----------------------------------- HEADER------------------------------------------>
+    <header>
+        <nav>
+            <ul class="fixed">
+                <li><a href="index.html"><img src="./img/logo.svg" alt="intercom"></a></li>
+                <!-- <li >
+                    <a href="" id="menu" class="menuToggle">menu</a>
+                </li> -->
+                <button class="ham">
+                    <!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+                    <span class="menuIcon material-icons">
+                      menu
+                    </span>
+                    <span class="xIcon material-icons">
+                      menu
+                    </span>
+                </button>
+            </ul> 
+        </nav>
+
+    </header> 
+
+    <ul class="menu">
+        <li><a id="login" href="#">login</a></li>
+        <li><a id="close" class="xIcon2 fas fa-times" href="#"></a></li>
+        <li><a class="menuLink" href="notfound.html">About Us</a></li>
+        <li><a class="menuLink" href="consulenti.html">Consulenti</a></li>
+        <li><a class="menuLink" href="services-page.html">Servizi</a></li>
+        <li><a class="menuLink" href="news.html">News</a></li>
+        <li><a class="menuLink" href="partners.html">Partners</a></li>
+        <li><a class="menuLink" href="#contacts">Contatti</a></li>
+      </ul>
         
         <!---------------------------------FINE HEADER --------------------------------------->
         <!--------------------------------- MAIN --------------------------------------->
@@ -173,5 +180,6 @@
                  <a href="caragraphicdesign@gmail.com">Carolina Cristino</a>
                 </p>
          </footer>
+         <script src="script.js"></script>
 </body>
 </html>

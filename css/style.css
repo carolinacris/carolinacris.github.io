@@ -1241,10 +1241,13 @@ header ul .ham span #menu {
   border: none;
   z-index: 100;
 }
+.ham span {
+  font-family: "Apertura", sans-serif, helvetica;
+  color: rgba(161, 161, 161, 0.8);
+}
 
 .xIcon {
   display: none;
-  z-index: 55;
 }
 
 .menu {
@@ -1254,16 +1257,16 @@ header ul .ham span #menu {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: #c31a19;
   color: #eaeaea;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
   list-style: none;
   padding-top: 4rem;
   display: -webkit-box;
@@ -1276,6 +1279,7 @@ header ul .ham span #menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 .menu .menuLink {
   color: #eaeaea;
@@ -1304,13 +1308,22 @@ header ul .ham span #menu {
   -webkit-transition: ease 0.2s;
   transition: ease 0.2s;
 }
-
-.show {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: 0.5s, ease;
-  transition: 0.5s, ease;
-  background-color: blue;
+.menu #close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  color: #ffff;
+}
+.menu #close:hover {
+  color: #191919;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+.menu.showMenu {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 hr {
@@ -2318,7 +2331,7 @@ h2 {
 main #menu {
   position: fixed;
   z-index: 1;
-  top: 25vh;
+  top: 27vh;
   bottom: 0;
   left: 5rem;
   height: 350px;
