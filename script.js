@@ -24,10 +24,11 @@ function toggleMenu() {
     menu.classList.remove("showMenu");
     xIcon.style.display = "none";
     menuIcon.style.display = "block";
-  } else {
+  } 
+  else {
     menu.classList.add("showMenu");
     xIcon.style.display = "block";
-    menuIcon.style.display = "none";
+    menuIcon.style.display = "none"; 
   }
 }
 xIcon2.addEventListener('click', function(){

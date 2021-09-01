@@ -961,10 +961,6 @@ header ul .ham span #menu {
 #cv {
   background-color: #eaeaea;
 }
-#cv header ul {
-  position: absolute;
-  width: 98.9vw;
-}
 #cv main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1239,11 +1235,15 @@ header ul .ham span #menu {
 .ham {
   background: none;
   border: none;
-  z-index: 100;
 }
 .ham span {
   font-family: "Apertura", sans-serif, helvetica;
   color: rgba(161, 161, 161, 0.8);
+}
+.ham span:hover {
+  color: #c31a19;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .xIcon {
@@ -1263,10 +1263,10 @@ header ul .ham span #menu {
   color: #eaeaea;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
   list-style: none;
   padding-top: 4rem;
   display: -webkit-box;
@@ -1322,8 +1322,8 @@ header ul .ham span #menu {
 .menu.showMenu {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
 }
 
 hr {
@@ -2147,10 +2147,17 @@ footer a {
   margin-top: 1.3rem;
 }
 
-#forms {
+#forms main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
 }
 #forms .form-accedi-container, #forms .form-password-container {
   background-color: #ffff;
@@ -2249,6 +2256,9 @@ footer a {
   background-color: rgba(161, 161, 161, 0.8);
   -webkit-transition: ease 0.2s;
   transition: ease 0.2s;
+}
+#forms .form-password-container {
+  display: none;
 }
 
 html {

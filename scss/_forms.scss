@@ -1,6 +1,9 @@
 #forms{ 
-  display: flex;
-    
+  
+  main{display: flex;
+        justify-content: center;
+        align-items: center;
+        height:70vh ;}  
 .form-accedi-container, .form-password-container{
     background-color: $white;
     @include grid-col-startend (2,3);
@@ -57,4 +60,5 @@
 
    
 }
+.form-password-container{display: none;}
 }

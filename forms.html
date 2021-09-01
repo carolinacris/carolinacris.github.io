@@ -14,9 +14,41 @@
 	
 </head> 
 <body id="forms">
+    <!----------------------------------- HEADER------------------------------------------>
+    <header>
+        <nav>
+            <ul class="fixed">
+                <li><a href="index.html"><img src="./img/logo.svg" alt="intercom"></a></li>
+                <!-- <li >
+                    <a href="" id="menu" class="menuToggle">menu</a>
+                </li> -->
+                <button class="ham">
+                    <!-- X and menu icon SVGs from material icons https://material.io/resources/icons/ -->
+                    <span class="menuIcon material-icons">
+                      menu
+                    </span>
+                    <span class="xIcon material-icons">
+                      menu
+                    </span>
+                </button>
+            </ul> 
+        </nav>
 
+    </header> 
 
+    <ul class="menu">
+        <li><a id="login" href="forms.html">login</a></li>
+        <li><a id="close" class="xIcon2 fas fa-times" href="#"></a></li>
+        <li><a class="menuLink" href="notfound.html">About Us</a></li>
+        <li><a class="menuLink" href="consulenti.html">Consulenti</a></li>
+        <li><a class="menuLink" href="services-page.html">Servizi</a></li>
+        <li><a class="menuLink" href="news.html">News</a></li>
+        <li><a class="menuLink" href="partners.html">Partners</a></li>
     
+      </ul>
+    <!---------------------------------FINE HEADER --------------------------------------->
+
+    <main>
         <div class="accedi-container">
             <div class="form-accedi-container">
                 <h3>Accedi al tuo account</h3>
@@ -73,6 +105,25 @@
             </div> <!-- chiude form-container -->
             
         </div>
-
+    </main>
+    <hr>
+    <footer>
+       <div>
+        <p>Intecom <br> Export Import srls
+            </p>
+             <p>P.IVA 03923670040</p>
+       </div>
+        <p>sede legale Via E.Milano 8, 12042, Bra (cn), Italia
+            <br>
+            tel. 3887772788
+            <br>
+            codice univoco P62QHVQ
+        </p>
+        <p>Developed by <br>
+            <a href="https://github.com/GiacomoTezza">Giacom Tezza</a> <br>
+            <a href="caragraphicdesign@gmail.com">Carolina Cristino</a>
+           </p>
+    </footer>
+        <script src="script.js"></script>
 </body>
 </html>
