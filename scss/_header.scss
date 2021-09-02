@@ -11,7 +11,7 @@ header{
         justify-content: space-between;
         align-items: center;
         
-        padding: 2rem 4rem  ;
+        padding: 2.15% 4.3%  ;
         width: 98.9vw;
         
         li{
@@ -23,15 +23,34 @@ header{
    
         }
         .ham{
+            
             span{
 
                     #menu{  
                         font-family: $primary-font;
                         // margin-right: 8vw;
                         letter-spacing: 0.15rem;}
-                  
+                 
             }
-        }  
+        } 
+        .fa-bars{display: none;}
+        @media (max-width: 780px){
+          
+            .fa-bars{display: block;
+                    color: $dark-grey;
+                    &:active{
+                        color: $red;
+                    }
+                    &:hover{
+                        color: $red;
+                        transition: ease 0.2s;
+                    }}
+
+            .m{display: none;}
+        }
     }
 }
 
+#partners .fa-bars, #home .fa-bars{
+    color: $red;
+}
