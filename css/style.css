@@ -18,9 +18,9 @@ header ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 4rem;
+  padding: 2.15% 4.3%;
   width: 98.9vw;
-}
+}   
 header ul li {
   list-style: none;
 }
@@ -31,6 +31,30 @@ header ul li img {
 header ul .ham span #menu {
   font-family: "Apertura", sans-serif, helvetica;
   letter-spacing: 0.15rem;
+}
+header ul .fa-bars {
+  display: none;
+}
+@media (max-width: 780px) {
+  header ul .fa-bars {
+    display: block;
+    color: rgba(54, 54, 54, 0.8);
+  }
+  header ul .fa-bars:active {
+    color: #c31a19;
+  }
+  header ul .fa-bars:hover {
+    color: #c31a19;
+    -webkit-transition: ease 0.2s;
+    transition: ease 0.2s;
+  }
+  header ul .m {
+    display: none;
+  }
+}
+
+#partners .fa-bars, #home .fa-bars {
+  color: #c31a19;
 }
 
 .welcome-section {
@@ -1244,10 +1268,6 @@ header ul .ham span #menu {
   color: #c31a19;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
-}
-
-.xIcon {
-  display: none;
 }
 
 .menu {
