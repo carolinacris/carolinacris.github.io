@@ -1454,10 +1454,14 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  gap: 20px;
   font-size: 0.8rem;
   padding: 4rem 0;
+  margin: 0 7vw;
 }
 footer div p:nth-child(1) {
   color: #c31a19;
@@ -1466,16 +1470,39 @@ footer div p:nth-child(1) {
 }
 footer p {
   color: #191919;
-  width: 15vw;
+  width: 20vw;
+  min-width: 250px;
 }
 footer a {
   color: rgba(54, 54, 54, 0.8);
 }
 
-@media (max-width: 770px) {
+@media (max-width: 915px) {
   footer {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  footer div {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  footer p {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+@media (max-width: 915px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 #consulenti main {

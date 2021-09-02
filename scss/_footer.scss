@@ -9,9 +9,12 @@ hr{ color: $dark-grey;
 footer{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 20px;
     font-size: 0.8rem;
     padding: 4rem 0 ;
+    margin: 0 7vw;
     div{
         p:nth-child(1){
             color: $red;
@@ -21,11 +24,24 @@ footer{
 
         
     }
-    p{color:$black; width: 15vw;}
+    p{color:$black; width:20vw;
+        min-width: 250px;}
     a{ color: $dark-grey;}
 }
-@media (max-width: 770px){
+@media (max-width: 915px){
     footer{
-        transform: scale(0.7);
+        @include grid-column(grid, repeat(2, auto), start);
+        div{
+            @include grid-col-startend(1,2);
+        }
+        p{@include grid-col-startend(2,3);} 
+
+    }
+
+} 
+@media (max-width: 915px){
+    footer{
+        display: flex;
+        flex-direction: column;
     }
 }
