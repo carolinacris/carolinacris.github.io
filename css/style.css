@@ -1385,12 +1385,12 @@ footer a {
   grid-column-end: 3;
   padding-bottom: 15vh;
 }
-#consulenti main nav {
+#consulenti main .nav_categories {
   grid-column-start: 1;
   grid-column-end: 2;
   width: 250px;
 }
-#consulenti main nav ul {
+#consulenti main .nav_categories ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1402,11 +1402,14 @@ footer a {
       justify-content: space-around;
   height: 50vh;
 }
-#consulenti main nav ul li {
+#consulenti main .nav_categories ul li {
   list-style: none;
 }
-#consulenti main nav ul li a {
+#consulenti main .nav_categories ul li a {
   font-size: 1.2rem;
+}
+#consulenti main .nav_categories_comparsa, #consulenti main .cat {
+  display: none;
 }
 #consulenti main .container-consulenti {
   display: -webkit-box;
@@ -1539,7 +1542,7 @@ footer a {
             justify-content: center;
     grid-template-rows: repeat(auto-fill, 100px);
   }
-  #consulenti main nav {
+  #consulenti main .nav_categories {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -1547,7 +1550,7 @@ footer a {
     height: 5vh;
     width: auto;
   }
-  #consulenti main nav ul {
+  #consulenti main .nav_categories ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1562,10 +1565,10 @@ footer a {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  #consulenti main nav ul li {
+  #consulenti main .nav_categories ul li {
     margin: 0 2px;
   }
-  #consulenti main nav ul li a {
+  #consulenti main .nav_categories ul li a {
     font-size: 0.9rem;
   }
   #consulenti main .container-consulenti {
@@ -1701,18 +1704,87 @@ footer a {
     color: #ffff;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   #consulenti main h2 {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }
-  #consulenti main nav ul li a {
+  #consulenti main .nav_categories ul li a {
     font-size: 0.6rem;
   }
   #consulenti main .container-consulenti {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media (max-width: 780px) {
+  #consulenti main h2 {
+    margin: 0;
+  }
+  #consulenti main .nav_categories {
+    display: none;
+  }
+  #consulenti main .cat {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: none;
+    background: none;
+  }
+  #consulenti main .cat span {
+    text-decoration: none;
+    color: rgba(161, 161, 161, 0.8);
+    font-family: "Apertura", sans-serif, helvetica;
+  }
+  #consulenti main .nav_categories_comparsa {
+    display: block;
+    background-color: #ffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    right: 0;
+    z-index: 40;
+    border-radius: 10px 10px 0 0;
+    -webkit-box-shadow: 0 3px 10px #4242424d;
+            box-shadow: 0 3px 10px #4242424d;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition: -webkit-transform 0.6s ease;
+    transition: -webkit-transform 0.6s ease;
+    transition: transform 0.6s ease;
+    transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  }
+  #consulenti main .nav_categories_comparsa ul {
+    padding: 0 2rem 2rem 2rem;
+  }
+  #consulenti main .nav_categories_comparsa .xIcon3 {
+    display: none;
+  }
+  #consulenti main .nav_categories_comparsa .xIcon4 {
+    position: relative;
+    text-align: end;
+    margin: 1rem;
+  }
+  #consulenti main .nav_categories_comparsa li {
+    list-style: none;
+  }
+  #consulenti main .nav_categories_comparsa li a {
+    font-size: 1.1rem;
+  }
+  #consulenti main .nav_categories_comparsa.showCate {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
   }
 }
 
