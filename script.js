@@ -11,6 +11,12 @@ dots.forEach(dot =>{
         this.classList.add('active');
     });
 });
+
+
+
+
+
+
 //menu slide -------------------------------------------------------------
 var menu = document.querySelector(".menu");
 var ham = document.querySelector(".ham");
@@ -22,18 +28,21 @@ ham.addEventListener("click", toggleMenu)
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
-    xIcon.style.display = "none";
-    menuIcon.style.display = "block";
+    // xIcon.style.display = "none";
+    // menuIcon.style.display = "block";
   } 
   else {
     menu.classList.add("showMenu");
-    xIcon.style.display = "block";
-    menuIcon.style.display = "none"; 
+    // xIcon.style.display = "block";
+    // menuIcon.style.display = "none"; 
   }
 }
 xIcon2.addEventListener('click', function(){
     menu.classList.remove('showMenu');
 })
+
+
+
 //fine menu slider---------------------------------------------------------------------
 // box categorie ----------------------------------------------------------------------
 var nav = document.querySelector(".nav_categories_comparsa");
@@ -58,6 +67,17 @@ xIcon4.addEventListener('click', function(){
     nav.classList.remove('showCate');
 })
 // fine box categorie -----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 var menuLinks = document.querySelectorAll(".menuLink")
 
 menuLinks.forEach(
