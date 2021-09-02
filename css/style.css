@@ -1706,8 +1706,8 @@ footer a {
 }
 @media (max-width: 880px) {
   #consulenti main h2 {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    font-size: 2.3rem;
+    justify-self: flex-start;
   }
   #consulenti main .nav_categories ul li a {
     font-size: 0.6rem;

@@ -222,7 +222,8 @@
                 
             } //chiude media
             @media (max-width: 880px){
-                h2{transform: scale(0.7);}
+                h2{font-size: 2.3rem;
+                    justify-self: flex-start;}
                 .nav_categories{
                     ul{
                         li{
