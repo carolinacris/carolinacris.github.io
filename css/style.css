@@ -1181,6 +1181,96 @@ header ul .fa-bars {
 #cv main .contattami .cv-contact-text-box li, #cv main .contattami .cv-contact-text-box p, #cv main .contattami .cv-contact-text-box h3 {
   padding-bottom: 1rem;
 }
+@media (max-width: 1120px) {
+  #cv main .cv-intro {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #cv main .cv-intro .text-box {
+    min-width: 450px;
+  }
+}
+@media (max-width: 880px) {
+  #cv main .cv-cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 1.5rem;
+  }
+  #cv main .cv-cards-container .cv-card {
+    min-width: 300px;
+  }
+}
+@media (max-width: 810px) {
+  #cv main .contattami {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  #cv main .contattami .call-action-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  #cv main .contattami .call-action-box p {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-bottom: 1rem;
+  }
+  #cv main .contattami .call-action-box .custom-button:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 0;
+  }
+  #cv main .contattami .call-action-box .custom-button:nth-of-type(1) img {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #cv main .contattami .call-action-box .custom-button:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+  }
+  #cv main .contattami .cv-contact-text-box .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 10px;
+    padding-top: 0.5rem;
+  }
+  #cv main .contattami .cv-contact-text-box .social li {
+    min-width: 176px;
+  }
+}
 
 #single {
   background-color: #eaeaea;
