@@ -1013,6 +1013,7 @@ header ul .fa-bars {
   background: url(/img/cv.jpg) no-repeat center center;
   background-size: cover;
   border: 4px #ffff solid;
+  margin: 1px;
 }
 #cv main .cv-intro figure:hover {
   -webkit-box-shadow: 0px 0px 6px rgba(173, 6, 6, 0.315);
@@ -1207,6 +1208,19 @@ header ul .fa-bars {
   }
 }
 @media (max-width: 810px) {
+  #cv main .cv-intro {
+    margin: 100px 0 0 0;
+  }
+  #cv main .cv-intro figure {
+    width: 250px;
+    height: 250px;
+  }
+  #cv main .cv-intro .text-box {
+    margin: 0 10px;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
   #cv main .contattami {
     display: grid;
     grid-template-rows: repeat(2, auto);
@@ -1269,6 +1283,29 @@ header ul .fa-bars {
   }
   #cv main .contattami .cv-contact-text-box .social li {
     min-width: 176px;
+  }
+}
+@media (max-width: 510px) {
+  #cv main .cv-intro .category {
+    padding-top: 1.7rem;
+  }
+  #cv main .cv-intro figure {
+    width: 250px;
+    height: 250px;
+  }
+  #cv main .cv-cards-container {
+    margin-top: 2rem;
+  }
+  #cv main .cv-cards-container .cv-card {
+    padding: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (max-width: 440px) {
+  #cv main .lavoro-box, #cv main .studio-box {
+    max-width: 220px;
   }
 }
 

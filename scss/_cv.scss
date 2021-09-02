@@ -15,6 +15,7 @@
             display: flex;
             justify-content: space-around;
             width: 80%;
+            
             figure{
             height: 400px;
             width: 400px;
@@ -22,11 +23,12 @@
             background: url(/img/cv.jpg) no-repeat center center;
             background-size: cover;
             border: 4px $white solid;
+            margin: 1px;
             &:hover{
                 box-shadow: 0px 0px 6px rgba(173, 6, 6, 0.315);
                 transition: box-shadow .4s ease;
                 }
-            } 
+            }  
             .text-box{
             width: 40vw;
             .category{@include label; 
@@ -149,6 +151,17 @@
         }
     }
     @media (max-width: 810px){
+        .cv-intro{
+            margin: 100px 0 0 0;
+            figure{
+                width: 250px;
+                height: 250px; 
+            }
+            .text-box{
+                margin: 0 10px;
+                min-width: fit-content;
+            }
+        }
         .contattami{
             @include grid-row(grid, repeat(2, auto), start);
             
@@ -194,6 +207,29 @@
         }
 
     }  
+    @media(max-width: 510px){
+     
+          .cv-intro{
+              .category{padding-top: 1.7rem;}
+              figure{
+                  width: 250px;
+                  height: 250px; 
+              }
+            
+          }
+          .cv-cards-container{
+              margin-top: 2rem;
+              .cv-card{
+                  padding: 0;
+                  width: fit-content;
+              }
+          }
+    }
+    @media(max-width: 440px){
+        .lavoro-box, .studio-box{
+            max-width:220px ;
+        }
+    }
     } //chiude il main
 
 }
