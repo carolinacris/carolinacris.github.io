@@ -1729,6 +1729,7 @@ footer a {
     display: block;
     grid-column-start: 1;
     grid-column-end: 3;
+    justify-self: flex-start;
     border: none;
     background: none;
   }
