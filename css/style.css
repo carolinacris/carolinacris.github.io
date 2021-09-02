@@ -1362,6 +1362,12 @@ footer a {
   color: rgba(54, 54, 54, 0.8);
 }
 
+@media (max-width: 770px) {
+  footer {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
 #consulenti main {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -1418,7 +1424,7 @@ footer a {
   height: 180px;
   border-radius: 100px 15px 15px 100px;
   max-width: 550px;
-  margin: 10px 0;
+  margin: 10px 2px;
 }
 #consulenti main .card-consulenti figure {
   height: 200px;
@@ -1509,7 +1515,7 @@ footer a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#consulenti main .card-consulenti .circle .fab {
+#consulenti main .card-consulenti .circle .catIcon {
   color: #c31a19;
 }
 #consulenti main .card-consulenti .circle:hover {
@@ -1519,8 +1525,181 @@ footer a {
   -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
 }
-#consulenti main .card-consulenti .circle:hover .fab {
+#consulenti main .card-consulenti .circle:hover .catIcon {
   color: #ffff;
+}
+@media (max-width: 820px) {
+  #consulenti main {
+    margin: 0 3vw;
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-template-rows: repeat(auto-fill, 100px);
+  }
+  #consulenti main nav {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 5vh;
+    width: auto;
+  }
+  #consulenti main nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #consulenti main nav ul li {
+    margin: 0 2px;
+  }
+  #consulenti main nav ul li a {
+    font-size: 0.9rem;
+  }
+  #consulenti main .container-consulenti {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 0;
+    margin: 0 auto;
+    gap: 10px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  #consulenti main .container-consulenti .card-consulenti {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ffff;
+    height: 126px;
+    border-radius: 100px 15px 15px 100px;
+    margin: 10px 2px;
+  }
+  #consulenti main .container-consulenti .card-consulenti figure {
+    height: 140px;
+    width: 140px;
+    position: relative;
+    top: -7px;
+    background: url(../img/cv.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 100%;
+    -webkit-transition: ease 0.1s;
+    transition: ease 0.1s;
+  }
+  #consulenti main .container-consulenti .card-consulenti figure:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-animation: pulse 0.6s ease 0.1s 1;
+            animation: pulse 0.6s ease 0.1s 1;
+    -webkit-transition: ease, -webkit-transform 0.6s;
+    transition: ease, -webkit-transform 0.6s;
+    transition: transform 0.6s, ease;
+    transition: transform 0.6s, ease, -webkit-transform 0.6s;
+    border: solid #c31a19 2px;
+  }
+  @-webkit-keyframes pulse {
+    from {
+      -webkit-box-shadow: 0 0 0 0 rgba(221, 7, 7, 0.4);
+              box-shadow: 0 0 0 0 rgba(221, 7, 7, 0.4);
+    }
+    to {
+      -webkit-box-shadow: 0 0 0 5px rgba(241, 25, 25, 0);
+              box-shadow: 0 0 0 5px rgba(241, 25, 25, 0);
+    }
+  }
+  @keyframes pulse {
+    from {
+      -webkit-box-shadow: 0 0 0 0 rgba(221, 7, 7, 0.4);
+              box-shadow: 0 0 0 0 rgba(221, 7, 7, 0.4);
+    }
+    to {
+      -webkit-box-shadow: 0 0 0 5px rgba(241, 25, 25, 0);
+              box-shadow: 0 0 0 5px rgba(241, 25, 25, 0);
+    }
+  }
+  #consulenti main .container-consulenti .card-consulenti .text-box-card-c {
+    max-height: 105px;
+    max-width: 175px;
+    padding: 17.5px 0 17.5px 10.5px;
+  }
+  #consulenti main .container-consulenti .card-consulenti .text-box-card-c h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #191919;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  #consulenti main .container-consulenti .card-consulenti .text-box-card-c h3 a {
+    color: rgba(54, 54, 54, 0.8);
+  }
+  #consulenti main .container-consulenti .card-consulenti .text-box-card-c h3 a:hover {
+    color: #c31a19;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+  }
+  #consulenti main .container-consulenti .card-consulenti .text-box-card-c p a {
+    color: #191919;
+    font-size: 0.8rem;
+  }
+  #consulenti main .container-consulenti .card-consulenti .text-box-card-c p a:hover {
+    color: #c31a19;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+  }
+  #consulenti main .container-consulenti .card-consulenti .text-box-card-c .intro-consulenti-card {
+    font-family: "Apertura", sans-serif, helvetica;
+    color: #191919;
+    font-size: 18pt;
+    font-weight: 300;
+    font-size: 0.6rem;
+    padding-top: 0.4rem;
+  }
+  #consulenti main .container-consulenti .card-consulenti .circle {
+    position: relative;
+    left: 10.5px;
+    top: -10.5px;
+    background-color: #ffff;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    -webkit-box-shadow: -2.1px 2.1px 7px #42424221;
+            box-shadow: -2.1px 2.1px 7px #42424221;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #consulenti main .container-consulenti .card-consulenti .circle .catIcon {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    color: #c31a19;
+  }
+  #consulenti main .container-consulenti .card-consulenti .circle:hover {
+    background-color: #c31a19;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
+  }
+  #consulenti main .container-consulenti .card-consulenti .circle:hover .catIcon {
+    color: #ffff;
+  }
 }
 
 #services-page main {

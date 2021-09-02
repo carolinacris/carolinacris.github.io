@@ -45,6 +45,10 @@
     grid-column-start: $start;
     grid-column-end: $end;
 }
+@mixin grid-row-startend($start, $end) {
+    grid-row-start: $start;
+    grid-row-end: $end;
+}
 @mixin h2 {
     font-size: 3.5rem;
     font-weight: 450;

@@ -24,3 +24,8 @@ footer{
     p{color:$black; width: 15vw;}
     a{ color: $dark-grey;}
 }
+@media (max-width: 770px){
+    footer{
+        transform: scale(0.7);
+    }
+}
