@@ -1810,8 +1810,9 @@ footer a {
     grid-column-start: 1;
     grid-column-end: 3;
     padding: 0;
-    margin: 6vh auto;
+    margin: 6vh 4.6%;
     gap: 10px;
+    margin: 50px 0 0 0;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
   }
@@ -1962,7 +1963,7 @@ footer a {
     display: block;
     grid-column-start: 1;
     grid-column-end: 3;
-    justify-self: flex-start;
+    justify-self: flex-end;
     border: none;
     background: none;
   }
@@ -2022,6 +2023,9 @@ footer a {
             transform: translateY(0);
     -webkit-transition: 0.6s ease;
     transition: 0.6s ease;
+  }
+  #consulenti main .container-consulenti {
+    margin: 20px 0 0 0;
   }
 }
 
