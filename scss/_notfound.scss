@@ -27,7 +27,7 @@
                     border: solid $red 4px; 
                     transition: 0.3s ease;
                     
-
+ 
                 }
 
             }
@@ -63,6 +63,11 @@
 
             }
             p{margin-top: 1.3rem;}
+        }
+    }
+    @media (max-height:880px){
+        main{
+            
         }
     }
 }

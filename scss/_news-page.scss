@@ -59,5 +59,15 @@
   
 
     } //chiude il wrapper
+    @media (max-width: 1010px){
+       .grid{
+        column-count: 2;
+       }
+    }
+    @media (max-width: 720px){
+        .grid{
+         column-count: 1;
+        }
+     }
 }
 

@@ -4,7 +4,7 @@
     main {
         h2{@include h2-bgw;
         @include grid-col-startend(1,3);
-        padding-bottom: 15vh;}
+        padding-bottom: 10vh;}
         @include grid-column(grid, 1fr 4fr, center );
         padding: 20vh 0;
         margin: 0 3vw 0 5vw;
@@ -223,29 +223,24 @@
             } //chiude media
             @media (max-width: 880px){
                 h2{font-size: 2.3rem;
-                    justify-self: flex-start;}
-                .nav_categories{
-                    ul{
-                        li{
-                            a{ 
-                                font-size: 0.6rem;
-                            }
-                        }
-                    }
+                    justify-self: flex-start;
+                   
                 }
+          
                 .container-consulenti{justify-content: center;}
             }
             @media (max-width: 780px){
-                h2{
-                    margin: 0;
-                }
+                h2{ padding: 0;
+                    height: 1.5rem;}
                 .nav_categories{display: none;}
                 .cat{display: block;
                              @include grid-col-startend(1,3);
                     justify-self: flex-start;
                             border: none; background: none;
                                 span{@include a-primary;
-                                    font-family: $primary-font;}
+                                    font-family: $primary-font;
+                                    color: $dark-grey;
+                                    font-size: 1rem;}
                             }
                 .nav_categories_comparsa{
                     display: block;
@@ -272,6 +267,7 @@
                         list-style: none; 
                         a{
                             font-size: 1.1rem;
+                            color: $dark-grey;
                         }
                     }
                     &.showCate{

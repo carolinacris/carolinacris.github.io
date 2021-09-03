@@ -64,5 +64,15 @@
         transition: 0.6s ease;
         
     }
+    @media (max-width: 700px){
+        .menuLink{
+            @include menulink;
+            transition: 0.3s;
+            &:hover{
+                font-size: 3rem;
+                transition: ease, 0.3s;
+            }
+        }
+    }
 } //chiude il menu
 
