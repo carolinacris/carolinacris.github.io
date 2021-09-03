@@ -1448,7 +1448,7 @@ header ul .fa-bars {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #c31a19;
   color: #eaeaea;
   -webkit-transform: translateX(100%);
@@ -1532,6 +1532,10 @@ header ul .fa-bars {
     -webkit-transition: ease, 0.3s;
     transition: ease, 0.3s;
   }
+}
+
+#home .menu {
+  width: 100vw;
 }
 
 hr {
