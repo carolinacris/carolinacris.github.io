@@ -53,30 +53,28 @@ menuLinks.forEach(
 
 buttonSlider.forEach(
     but =>{ but.addEventListener('click', function(){
-        slider.forEach(
-            slide =>{slide.classList.toggle('scroll');}
+        slider.forEach(slide =>{
+          console.log('eccomi');
+          slide.classList.toggle('scroll');}
         )
     });
 });
 
 
-// buttonServices.addEventListener('click',function(){
-//     console.log('ci siamo');
-//     slider.classList.toggle('scroll');
-
-// });
-
-
-
+button.addEventListener('click',function(){
+  console.log('senti');
+  slides.forEach(slide => slide.classList.toggle('next'));
+});
    
-slides.forEach(
-    button.addEventListener('click', function(){
-        console.log('sento');
-        slides.forEach(slide => slide.classList.toggle('next'));
+// slides.forEach(
+//     button.addEventListener('click', function(){
+//         console.log('sento');
+//         slides.forEach(slide => slide.classList.toggle('next'));
         
-    })
+//     })
     
-);
+// );
+
 
 
 // box categorie ----------------------------------------------------------------------
@@ -85,7 +83,9 @@ var cat = document.querySelector(".cat");
 var xIcon3 = document.querySelector(".xIcon3");
 var categorieButton = document.querySelector(".categorieButton");
 var xIcon4 = document.querySelector(".xIcon4");
-cat.addEventListener("click", toggleCate)
+
+cat.addEventListener('click', toggleCate);
+
 function toggleCate() {
   if (nav.classList.contains("showCate")) {
     nav.classList.remove("showCate");
@@ -100,6 +100,6 @@ function toggleCate() {
 }
 xIcon4.addEventListener('click', function(){
     nav.classList.remove('showCate');
-})
+}) 
 // fine box categorie -----------------------------------------------------------------
  
