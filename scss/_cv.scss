@@ -226,8 +226,34 @@
           }
     }
     @media(max-width: 440px){
+        .cv-intro{
+            .text-box{
+                p{font-size: 1.3rem;}
+                h2{font-size: 2rem;}
+            }
+        }
         .lavoro-box, .studio-box{
-            max-width:220px ;
+            max-width:200px ;
+        }
+        .contattami{
+            p{font-size: 1.5rem;}
+            .custom-button{transform: scale(0.9);}
+            .cv-contact-text-box{
+                .social{
+                    justify-content: center;
+                    li{
+                        padding-bottom: 0;
+                        a{ font: 0.9rem;
+                            }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 380px){
+
+        .lavoro-box, .studio-box{
+            max-width:180px ;
         }
     }
     } //chiude il main

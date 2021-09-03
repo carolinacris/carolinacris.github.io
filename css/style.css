@@ -1304,8 +1304,37 @@ header ul .fa-bars {
   }
 }
 @media (max-width: 440px) {
+  #cv main .cv-intro .text-box p {
+    font-size: 1.3rem;
+  }
+  #cv main .cv-intro .text-box h2 {
+    font-size: 2rem;
+  }
   #cv main .lavoro-box, #cv main .studio-box {
-    max-width: 220px;
+    max-width: 200px;
+  }
+  #cv main .contattami p {
+    font-size: 1.5rem;
+  }
+  #cv main .contattami .custom-button {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  #cv main .contattami .cv-contact-text-box .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #cv main .contattami .cv-contact-text-box .social li {
+    padding-bottom: 0;
+  }
+  #cv main .contattami .cv-contact-text-box .social li a {
+    font: 0.9rem;
+  }
+}
+@media (max-width: 380px) {
+  #cv main .lavoro-box, #cv main .studio-box {
+    max-width: 180px;
   }
 }
 
