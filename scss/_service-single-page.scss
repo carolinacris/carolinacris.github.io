@@ -1,9 +1,9 @@
 #service-single-page{
    .container{
-    padding: 15vh  0;
+    padding: 20vh 0 15vh 0;
     display: grid;   
     @include grid-column(grid, 1fr 25fr, start);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     margin: 0 5vw;
     align-items: center;
         .circle2{
@@ -18,12 +18,13 @@
             margin-right: 20px;
             display: flex;
             align-items: center;
-            
+            justify-content: center;
             
             .fa-code{ 
                 position: relative;
-                left: 0.4rem;
+                // left: 0.4rem;
                 color: $red; 
+                
                 }
 
                 &:hover{ 
@@ -38,14 +39,15 @@
             @include grid-col-startend(2,3);
             grid-row-start: 1;
             grid-row-end: 2;
-
+            max-width: 60%;
+            
         }
         .uno{
             @include grid-col-startend(2,3);
             grid-row-start: 2;
             grid-row-end: 3;
             width: 70vw;
-            margin-top: 4vh;
+            padding: 50px 0 0 0;
         }
     
         .content-container-service{
@@ -53,7 +55,7 @@
             margin-top: 20vh;
             display: flex;
             flex-wrap: wrap;
-            
+            height: fit-content;
           
             .services-card-page{
                 width: 35vw;
@@ -61,7 +63,8 @@
                 flex-direction: column;
                 flex-grow: 2;
                 flex-shrink: 1.5;
-                min-width: 250px;
+                min-width: 365px;
+                height: fit-content;
                 .text-box-card-1{
                     padding: 0;
                     p{margin-top: 2rem;}
@@ -88,17 +91,18 @@
                         
                         height: 2rem;
                     }}
-                    .consulenti-suggeriti{
+            .consulenti-suggeriti{
                         display: flex;
                         flex-wrap: wrap;
-                    .card-consulenti {
+                        justify-content: space-around;
+                .card-consulenti {
                         display: flex;
                         background-color: $white;
                         height: 180px;
                         border-radius:100px 15px 15px 100px;
                         max-width: 550px ;
                         
-                        margin: 10vh 10vh 10vh 0;
+                        margin: 10vh 0 0;
                         figure{
                             height: 200px;
                             width: 200px;
@@ -157,13 +161,13 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            .fab{
+                            .catIcon{
                            
                                 color: $red;}
                                 
                             &:hover{ 
                                 background-color: $red;
-                                .fab{color:$white;}
+                                .catIcon{color:$white;}
                                 transform: scale(1.1);
                                 transition: ease-in 0.3s;
                             }
@@ -176,5 +180,149 @@
         }
 
    }
- 
+   @media (max-width: 880px){
+       .container{
+       .services-card-page:nth-of-type(2){
+           padding-top:4rem;
+           
+       }
+       .services-card-page{min-width: 10px;}
+       .box-suggeriti{
+        .title{ display: flex;
+            align-items: center;
+            padding-top: 7vh;
+            h2{ font-size: 2rem;
+
+                padding-right:1rem ;}
+            img{
+                
+                height: 1.5rem;
+            }}
+        .consulenti-suggeriti{
+            justify-content: flex-start;
+        }
+       }
+    }
+   }
+   @media (max-width: 750px){
+       .container{
+           h2{font-size: 2rem;}  
+           .circle2{height: 2rem;
+                    width: 2rem;}
+            .fa-code{font-size: 1rem;}
+            p:nth-of-type(1){font-size: 1.2rem;}
+            .box-suggeriti{
+                .title{
+                    h2{
+                        font-size: 1.5rem;
+                        letter-spacing: 7pt;
+                    }
+                }
+                .consulenti-suggeriti{
+                    .card-consulenti{
+                        display: flex;
+                        background-color: $white;
+                        height: 126px;
+                        border-radius:100px 15px 15px 100px;
+                       
+                        margin: 7vh 0 0 0;
+                        figure{
+                            height: 140px;
+                            width: 140px;
+                            position: relative;
+                            top: -7px;
+                            background: url(../img/cv.jpg) no-repeat center center;
+                            background-size: cover;
+                            border-radius: 100%;
+                            transition: ease 0.1s;
+                            &:hover {
+                                transform: scale(1.05);
+                                                animation: pulse 0.6s ease 0.1s 1;
+                                                transition: transform .6s, ease;
+                                                border: solid $red 2px;
+                                                @keyframes pulse{
+                                                    from{ box-shadow: 0 0 0 0 rgba(221, 7, 7, 0.4)}
+                                                    to{box-shadow: 0 0 0 5px rgba(241, 25, 25, 0)}
+                                                }            
+                            }
+                        }
+                        
+                        .text-box-card-c{
+                            
+                            max-height:105px ;
+                            max-width: 175px;
+                            
+                            padding: 17.5px 0 17.5px 10.5px;
+                            h3{
+                                @include h3-card-article-bgw;
+                                font-size: 0.8rem;
+                                text-transform: uppercase;
+                                a{color: $dark-grey;
+                                 &:hover{color: $red;
+                                        transition: color .3s ease;}}
+                            }
+                            p a{ color:$black;
+                                font-size: 0.8rem;
+                                &:hover{color: $red;
+                                    transition: color .3s ease;}}
+                            .intro-consulenti-card{ 
+                                @include p-default-bgw;
+                                font-size: 0.6rem;
+                                padding-top: 0.4rem;
+                            }
+                           
+                        }
+                        .circle{ 
+                            position: relative;
+                            left:10.5px;
+                            top:-10.5px;
+                            background-color: $white;
+                            border-radius: 50%;
+                            height: 35px;
+                            width: 35px;
+                            box-shadow: -2.1px 2.1px 7px #42424221 ;
+                            // border: solid 1px coral;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .catIcon{
+                                transform: scale(0.7);
+                                color: $red;}
+                                
+                            &:hover{ 
+                                background-color: $red;
+                                .catIcon{color:$white;}
+                                transform: scale(1.1);
+                                transition: ease-in 0.3s;
+                            }
+                           
+                            }
+                       
+                    }
+                }
+            }
+       }
+
+   }
+   @media (max-width: 500px) {
+       .container{
+           h2{font-size: 1.5rem;
+            letter-spacing: 5pt;}
+            .box-suggeriti{
+                .title{
+                    h2{
+                        font-size: 1.3rem;
+                        letter-spacing: 4pt;
+                    }
+                }
+            }
+       }
+   }
+   @media (max-width: 470px) {
+       .container{
+           justify-content: center;
+          .uno,  .content-container-service, .box-suggeriti{@include grid-col-startend(1,3)}
+         
+       }
+   }
 } 

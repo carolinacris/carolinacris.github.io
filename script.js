@@ -12,11 +12,6 @@ dots.forEach(dot =>{
     });
 });
 
-
-
-
-
-
 //menu slide -------------------------------------------------------------
 var menu = document.querySelector(".menu");
 var ham = document.querySelector(".ham");
@@ -44,36 +39,6 @@ xIcon2.addEventListener('click', function(){
 
 
 //fine menu slider---------------------------------------------------------------------
-// box categorie ----------------------------------------------------------------------
-var nav = document.querySelector(".nav_categories_comparsa");
-var cat = document.querySelector(".cat");
-var xIcon3 = document.querySelector(".xIcon3");
-var categorieButton = document.querySelector(".categorieButton");
-var xIcon4 = document.querySelector(".xIcon4");
-cat.addEventListener("click", toggleCate)
-function toggleCate() {
-  if (nav.classList.contains("showCate")) {
-    nav.classList.remove("showCate");
-    xIcon3.style.display = "none";
-    categorieButton.style.display = "block";
-  } 
-  else {
-    nav.classList.add("showCate");
-    xIcon3.style.display = "block";
-    // categorieButton.style.display = "none"; 
-  }
-}
-xIcon4.addEventListener('click', function(){
-    nav.classList.remove('showCate');
-})
-// fine box categorie -----------------------------------------------------------------
-
-
-
-
-
-
-
 
 
 
@@ -114,5 +79,27 @@ slides.forEach(
 );
 
 
-
+// box categorie ----------------------------------------------------------------------
+var nav = document.querySelector(".nav_categories_comparsa");
+var cat = document.querySelector(".cat");
+var xIcon3 = document.querySelector(".xIcon3");
+var categorieButton = document.querySelector(".categorieButton");
+var xIcon4 = document.querySelector(".xIcon4");
+cat.addEventListener("click", toggleCate)
+function toggleCate() {
+  if (nav.classList.contains("showCate")) {
+    nav.classList.remove("showCate");
+    xIcon3.style.display = "none";
+    categorieButton.style.display = "block";
+  } 
+  else {
+    nav.classList.add("showCate");
+    xIcon3.style.display = "block";
+    // categorieButton.style.display = "none"; 
+  }
+}
+xIcon4.addEventListener('click', function(){
+    nav.classList.remove('showCate');
+})
+// fine box categorie -----------------------------------------------------------------
  
