@@ -2558,6 +2558,7 @@ footer a {
       -ms-flex-align: center;
           align-items: center;
   gap: 25px;
+  margin: 15px;
 }
 #notfound main .box figure {
   background: url(../img/ciccia.jpg) no-repeat center center;
@@ -2585,6 +2586,7 @@ footer a {
 }
 #notfound main .text-box {
   padding-bottom: 2rem;
+  margin: 0 5vw;
 }
 #notfound main .call-action {
   display: -webkit-box;
@@ -2633,6 +2635,38 @@ footer a {
 #notfound main .call-action p {
   margin-top: 1.3rem;
 }
+@media (max-width: 880px) {
+  #notfound main .box figure {
+    height: 10rem;
+    width: 10rem;
+  }
+  #notfound main .box p {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 440px) {
+  #notfound main .box figure {
+    height: 8rem;
+    width: 8rem;
+  }
+  #notfound main .box p {
+    font-size: 8rem;
+  }
+  #notfound main .text-box h2 {
+    font-size: 2rem;
+  }
+  #notfound main .text-box p {
+    font-size: 1.2rem;
+  }
+  #notfound main .call-action .tertiary-button {
+    height: 70px;
+    width: 70px;
+  }
+  #notfound main .call-action .tertiary-button img {
+    height: 14px;
+  }
+}
+
 #forms main {
   display: -webkit-box;
   display: -ms-flexbox;

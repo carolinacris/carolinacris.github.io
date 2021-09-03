@@ -9,7 +9,7 @@
             justify-content: center;
             align-items: center;
             gap: 25px;
-            
+            margin: 15px;
             figure{
                 background: url(../img/ciccia.jpg) no-repeat center center;
                 background-size: cover;
@@ -38,6 +38,7 @@
         }
         .text-box{
             padding-bottom:2rem ;
+            margin: 0 5vw;
         }
         .call-action{
             display: flex;
@@ -65,9 +66,30 @@
             p{margin-top: 1.3rem;}
         }
     }
-    @media (max-height:880px){
+    @media (max-width:880px){
         main{
+         
+            .box{ figure{height: 10rem;
+                            width: 10rem;} 
+                    p{font-size: 10rem;}
+                }
             
+        }
+    }
+    @media (max-width:440px){
+        main{
+         
+            .box{ figure{height: 8rem;
+                            width: 8rem;} 
+                    p{font-size: 8rem;}
+                }
+            .text-box{ h2{ font-size:2rem;}
+                        p{font-size: 1.2rem;}}
+            .call-action{
+                .tertiary-button{height: 70px;
+                    width: 70px;
+        img{height: 14px ;}}
+            }
         }
     }
 }
