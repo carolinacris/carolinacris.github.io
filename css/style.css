@@ -120,6 +120,7 @@ header ul .fa-bars {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
+
 .home-container2 {
   display: grid;
   grid-template-columns: 3fr 6fr 2.7fr 1.3fr;
@@ -177,6 +178,16 @@ header ul .fa-bars {
           transform: translateX(-120%);
 }
 
+@media (max-width: 936px) {
+  .home-container1 button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .services-section {
   background-color: #eaeaea;
 }
@@ -3134,6 +3145,7 @@ main #menu li.active a:after {
 main #menu li a {
   position: relative;
   padding-left: 20px;
+  font-size: 1.7vw;
 }
 main #menu li a:before {
   content: "";

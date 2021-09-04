@@ -92,6 +92,7 @@ main{
                 a{
                     position: relative;
                     padding-left: 20px;
+                    font-size: 1.7vw;
                     &:before{
                         //questo crea il pallino vuoto non attivo
                         content:"";
@@ -113,7 +114,9 @@ main{
                 }
                 // before e after sono due span "contenitori invisibili"
             }
+          
         }
+
     }
     .text-box-card-1{
         // position: relative;

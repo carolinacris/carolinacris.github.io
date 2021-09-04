@@ -28,9 +28,7 @@
         
         &:active{transform: scale(0.95);}
     } 
-    @media (max-width: 1186){
 
-    }
  }
 
  .home-container2{
@@ -84,4 +82,13 @@
         }
     }
  
+}
+@media (max-width: 936px){
+    .home-container1{
+        // justify-content: start;
+        button{
+            display: flex;
+            justify-content: flex-start;}
+    }
+
 }
