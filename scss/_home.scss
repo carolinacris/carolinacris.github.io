@@ -6,13 +6,14 @@
     .text-box1{ 
         @include grid-col-startend (2,3);
         margin-top: -100px;
-
+        width:60% ;
         h2{
             padding-bottom: 3rem;
+            font-size:4vw ;
         }
         p{
-            font-size: 2rem;
-        }
+            font-size: 2vw; 
+        } 
     } 
     button {
         @include grid-col-startend (3,4);
@@ -27,6 +28,9 @@
         
         &:active{transform: scale(0.95);}
     } 
+    @media (max-width: 1186){
+
+    }
  }
 
  .home-container2{
@@ -36,7 +40,9 @@
      h1{
          @include grid-col-startend (2,4);
          @include h1-primary;
-         margin-bottom: -20vh;
+         font-size: 4vw;
+         align-self: center;
+        
      }
      figure{
          background:url(../img/homeimg.jpg) no-repeat center center ;
@@ -49,7 +55,9 @@
      p{
         @include grid-col-startend (3,4);
         margin-left: 2rem ;
+       
         @include p-default;
+        font-size: 1.7vw;
      }
  }
 

@@ -88,12 +88,14 @@ header ul .fa-bars {
   grid-column-start: 2;
   grid-column-end: 3;
   margin-top: -100px;
+  width: 60%;
 }
 .home-container1 .text-box1 h2 {
   padding-bottom: 3rem;
+  font-size: 4vw;
 }
 .home-container1 .text-box1 p {
-  font-size: 2rem;
+  font-size: 2vw;
 }
 .home-container1 button {
   grid-column-start: 3;
@@ -118,7 +120,6 @@ header ul .fa-bars {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
-
 .home-container2 {
   display: grid;
   grid-template-columns: 3fr 6fr 2.7fr 1.3fr;
@@ -132,7 +133,8 @@ header ul .fa-bars {
   font-size: 3.5rem;
   font-weight: 400;
   line-height: 50pt;
-  margin-bottom: -20vh;
+  font-size: 4vw;
+  align-self: center;
 }
 .home-container2 figure {
   background: url(../img/homeimg.jpg) no-repeat center center;
@@ -150,6 +152,7 @@ header ul .fa-bars {
   color: #f3f3ef;
   font-size: 18pt;
   font-weight: 200;
+  font-size: 1.7vw;
 }
 
 #slider {

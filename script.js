@@ -61,10 +61,10 @@ buttonSlider.forEach(
 });
 
 
-button.addEventListener('click',function(){
-  console.log('senti');
-  slides.forEach(slide => slide.classList.toggle('next'));
-});
+// if(button)button.addEventListener('click',function(){
+//   console.log('senti');
+//   slides.forEach(slide => slide.classList.toggle('next'));
+// });
    
 // slides.forEach(
 //     button.addEventListener('click', function(){
@@ -74,7 +74,12 @@ button.addEventListener('click',function(){
 //     })
     
 // );
+if(button){button.addEventListener('click',function(){
+  console.log('senti');
+  slides.forEach(slide => slide.classList.toggle('next'));
+});
 
+}
 
 
 // box categorie ----------------------------------------------------------------------
