@@ -30,6 +30,7 @@ html{
 body{
     background-color: $white-sfondo;
     @include p-default-bgw;
+    overflow-x: hidden; 
 }
 .graybg {
     background-color: $white-sfondo;
@@ -114,7 +115,14 @@ main{
                 }
                 // before e after sono due span "contenitori invisibili"
             }
-          
+            @media (max-width: 1150px) {
+                
+                    left: 3vw; 
+                
+            }
+          @media (max-width: 1000px){
+              display: none;
+          }
         }
 
     }

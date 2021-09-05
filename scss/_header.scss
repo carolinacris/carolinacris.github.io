@@ -12,8 +12,8 @@ header{
         align-items: center;
         
         padding: 2.15% 4.3%  ;
-        width: 98.9vw;
-        
+        width: 100vw;
+        overflow: hidden;
         li{
             list-style: none;
             img{
@@ -34,6 +34,13 @@ header{
             }
         } 
         .fa-bars{display: none;}
+        @media (max-width: 1150px){
+          li{
+            img{
+                width:150px ;
+            }
+          }
+        }
         @media (max-width: 780px){
           
             .fa-bars{display: block;

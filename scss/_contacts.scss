@@ -182,5 +182,42 @@
             li, p, h3{padding-bottom: 1rem;}
         }
     } //chiude contacts conatiner
-
+    @media (max-width: 1400px){
+        .contacts-container{
+            .form-container{
+                width: 40vw;
+                a{
+                    margin-top: 0;
+                  }
+            }
+            .contacts-container-text-box{
+                width: 27vw;
+                font-size: 1.1rem;
+                
+            }
+        }
+    }
+    @media (max-width:1000px){
+        .contacts-container{
+            display: flex;
+            margin: 0 3vw;
+            .form-container{
+                max-width: 50vw;
+            }
+        
+        }
+    }
+    @media (max-width: 880px){
+        .contacts-container{
+            .form-container{
+                height: fit-content;
+                h3{
+                    font-size: 1.3rem;
+                }
+                a{
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
 } //deve stare per ultimo

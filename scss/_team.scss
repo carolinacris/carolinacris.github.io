@@ -1,6 +1,6 @@
 .team-section{
     background-color: $white-sfondo;
-    
+    padding: 0 3vw;
 
     .team-container{
         @include grid-column (grid, 3fr 8.7fr 1.3fr, space-around);
@@ -99,6 +99,7 @@
     button{
         background: none;
         border: none;
+        
         img{height: 30px;}
         transition: all 0.1s ease;
         
@@ -108,8 +109,10 @@
             
         @include grid-col-startend(2,4);
        width: 650px;
-        overflow: hidden;
-
+        overflow: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+         }
         .slider{
             display: flex;
             gap: 5rem;
@@ -123,4 +126,44 @@
              }
        }
         }
+    @media (max-width:1150px){
+        .team-container{
+            padding-top: 3rem;
+          .box-team{
+              
+              @include grid-column(grid, 1fr, center);
+              @include grid-row(grid, repeat(2, auto), center);
+              .empty{@include grid-row-startend(1,2);
+                @include grid-col-startend (1,4);
+            }
+              .wrapper{
+                  width: 550px;
+                  @include grid-row-startend(2,3);
+                  .slider{
+                      width: fit-content;
+                      .team-card{
+                          .imgbox{
+                              figure{
+                                  height: 200px;
+                                  width: 200px;
+                              }
+                              .tertiary-button{
+                                  height: 100px;
+                                  width: 100px;
+                                  margin-bottom: -200px;
+                              }
+                          }
+                          .text-box-card{
+                              h3{font-size: 1.3rem;}
+                              p{font-size: 1.17rem;}
+                          }
+                      }
+                      &.scroll{
+                        transform: translateX(-50%);
+                      }
+                  }
+              }
+          }
+        }
+    }
 }
