@@ -129,8 +129,10 @@
     @media (max-width:1150px){
         .team-container{
             padding-top: 3rem;
+            display: flex;
+            justify-content: center;
           .box-team{
-              
+              margin: 0 auto;
               @include grid-column(grid, 1fr, center);
               @include grid-row(grid, repeat(2, auto), center);
               .empty{@include grid-row-startend(1,2);
@@ -139,6 +141,7 @@
               .wrapper{
                   width: 550px;
                   @include grid-row-startend(2,3);
+                  @include grid-col-startend (1,4);
                   .slider{
                       width: fit-content;
                       .team-card{
@@ -160,6 +163,51 @@
                       }
                       &.scroll{
                         transform: translateX(-50%);
+                      }
+                  }
+              }
+          }
+        }
+    }
+    @media (max-width: 623px){
+        .team-container{
+            padding-top: 3rem;
+            display: flex;
+            justify-content: center;
+            button{padding-right: 20px;}
+          .box-team{
+              margin: 0 auto;
+              @include grid-column(grid, 1fr, center);
+              @include grid-row(grid, repeat(2, auto), center);
+              .empty{@include grid-row-startend(1,2);
+                @include grid-col-startend (1,4);
+            }
+              .wrapper{
+                  width: 300px;
+                  @include grid-row-startend(2,3);
+                  @include grid-col-startend (1,4);
+                  justify-self: center;
+                  .slider{
+                      width: fit-content;
+                      .team-card{
+                          .imgbox{
+                              figure{
+                                  height:250px;
+                                  width: 250px;
+                              }
+                              .tertiary-button{
+                                  height: 150px;
+                                  width: 150px;
+                                  margin-bottom: -250px;
+                              }
+                          }
+                          .text-box-card{
+                              h3{font-size: 1.5rem;}
+                              p{font-size: 1.3rem;}
+                          }
+                      }
+                      &.scroll{
+                        transform: translateX(-53%);
                       }
                   }
               }

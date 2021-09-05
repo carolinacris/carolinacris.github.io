@@ -94,3 +94,24 @@
           } 
       }
 }
+ @media (max-width: 623px){
+   .news-section{
+       height: fit-content;
+       .news-container{
+           height: 150vh;
+           .box-news{
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: flex-start;
+               article{
+                   min-width: 240px;
+                   height: fit-content;
+                   .text-box-card{
+                       height: fit-content;
+                   }
+               }
+      
+            }
+       }
+   }
+ }

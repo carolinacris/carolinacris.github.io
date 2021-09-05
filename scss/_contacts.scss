@@ -220,4 +220,18 @@
             }
         }
     }
+    @media (max-width: 623px){
+        .contacts-container{
+            flex-direction: column;
+            align-items: center;
+            .form-container{
+                min-width: 70vw;
+            }
+            .contacts-container-text-box{
+                padding-top: 3rem;
+                min-width: 70vw;
+                p{font-size: 1.1rem;}
+            }
+        }
+    }
 } //deve stare per ultimo
