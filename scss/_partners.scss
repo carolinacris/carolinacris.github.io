@@ -10,7 +10,10 @@
             align-items:center ;
             
             p{width: 50vw;
-            padding-top:5vh;}
+            padding-top:5vh;
+            @media (max-width: 880px) {
+                text-align:start;
+            }}
         }
         .container-card-partner{
             padding-top: 10vh;
