@@ -17,6 +17,7 @@
             height: 60vh;
             width: 27vw;
             border-radius: 15px;
+            max-width: 320px;
             figure{
                 height: 30vh ;
                 border-radius: 10px;
@@ -72,23 +73,23 @@
             .slider{
                 display: flex;
                 gap: 1rem;
-                width: calc(1400px + 3rem);
+                width: calc(1280px + 3rem);
                 // transform: translateX(-50%)
                 transition: ease 0.4s;
-                article:nth-of-type(2){
-                    margin-right: 2rem;
-                }
+                // article:nth-of-type(2){
+                //     margin-right: 2rem;
+                // }
                 
                 &.scroll{
                      transition: ease 0.4s;
                      transform: translateX(-50%);
-                     article:nth-of-type(2){
-                        margin-right:0;
-                    }
-                    article:nth-of-type(3){
-                        transition: 0.3s ease;
-                        margin-left:-1rem;
-                    }
+                    //  article:nth-of-type(2){
+                    //     margin-right:0;
+                    // }
+                    // article:nth-of-type(3){
+                    //     transition: 0.3s ease;
+                    //     margin-left:-1rem;
+                    // }
                  }
            }
             }
@@ -248,7 +249,11 @@
     }
     @media (max-width: 623px){
         #model-viewer{
-            padding: 1rem 0 4rem 0;
+            padding: 2rem 0 2rem 0;
+            model-viewer{ 
+                width: 70vw;
+                height: 70vw;
+            }
         }
     }
   }

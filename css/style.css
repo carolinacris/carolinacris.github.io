@@ -63,6 +63,11 @@ header ul .fa-bars {
   color: #c31a19;
 }
 
+@media (max-width: 500px) {
+  #home header ul {
+    position: absolute;
+  }
+}
 .welcome-section {
   height: 100vh;
   display: -webkit-box;
@@ -369,6 +374,7 @@ header ul .fa-bars {
   height: 60vh;
   width: 27vw;
   border-radius: 15px;
+  max-width: 320px;
 }
 .services-section .service-container-1 .box-cards article figure {
   height: 30vh;
@@ -467,26 +473,15 @@ header ul .fa-bars {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-  width: calc(1400px + 3rem);
+  width: calc(1280px + 3rem);
   -webkit-transition: ease 0.4s;
   transition: ease 0.4s;
-}
-.services-section .service-container-1 .wrapper .slider article:nth-of-type(2) {
-  margin-right: 2rem;
 }
 .services-section .service-container-1 .wrapper .slider.scroll {
   -webkit-transition: ease 0.4s;
   transition: ease 0.4s;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-.services-section .service-container-1 .wrapper .slider.scroll article:nth-of-type(2) {
-  margin-right: 0;
-}
-.services-section .service-container-1 .wrapper .slider.scroll article:nth-of-type(3) {
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-  margin-left: -1rem;
 }
 @media (max-width: 1000px) {
   .services-section .service-container-1 {
@@ -712,7 +707,11 @@ header ul .fa-bars {
 }
 @media (max-width: 623px) {
   .services-section .service-container-2 #model-viewer {
-    padding: 1rem 0 4rem 0;
+    padding: 2rem 0 2rem 0;
+  }
+  .services-section .service-container-2 #model-viewer model-viewer {
+    width: 70vw;
+    height: 70vw;
   }
 }
 

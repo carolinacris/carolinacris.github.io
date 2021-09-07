@@ -59,8 +59,17 @@ header{
         //     ul{width: 100vw;}
         // }
     }
+
 }
 
 #partners .fa-bars, #home .fa-bars{
     color: $red;
+}
+
+@media (max-width:500px){
+        #home {
+            header{
+                ul{ position: absolute;}
+            }
+        }
 }
