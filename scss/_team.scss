@@ -171,10 +171,11 @@
     }
     @media (max-width: 623px){
         .team-container{
-            padding-top: 3rem;
+            padding: 3rem 0;
             display: flex;
             justify-content: center;
             button{padding-right: 20px;}
+            
           .box-team{
               margin: 0 auto;
               @include grid-column(grid, 1fr, center);

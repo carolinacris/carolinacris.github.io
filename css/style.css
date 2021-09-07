@@ -1010,7 +1010,7 @@ header ul .fa-bars {
 }
 @media (max-width: 623px) {
   .team-section .team-container {
-    padding-top: 3rem;
+    padding: 3rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1583,11 +1583,11 @@ header ul .fa-bars {
             align-items: center;
   }
   .contacts-section .contacts-container .form-container {
-    min-width: 70vw;
+    min-width: 80vw;
   }
   .contacts-section .contacts-container .contacts-container-text-box {
     padding-top: 3rem;
-    min-width: 70vw;
+    min-width: 80vw;
   }
   .contacts-section .contacts-container .contacts-container-text-box p {
     font-size: 1.1rem;
