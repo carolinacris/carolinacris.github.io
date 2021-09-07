@@ -449,7 +449,7 @@ header ul .fa-bars {
 .services-section .service-container-1 button {
   background: none;
   border: none;
-  padding: 0 10px;
+  padding: 0 5px;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
@@ -1585,6 +1585,7 @@ header ul .fa-bars {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 10vh 0;
   }
   .contacts-section .contacts-container .form-container {
     min-width: 80vw;
