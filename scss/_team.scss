@@ -215,4 +215,9 @@
           }
         }
     }
+    @media (max-width: 420px) {
+        .box-team{
+            transform: scale(0.8);
+        }
+    }
 }

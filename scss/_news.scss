@@ -91,6 +91,7 @@
     }
 }
       @media (max-width: 1000px){
+          height: fit-content;
           .news-container{
               display: flex;
               
@@ -99,18 +100,22 @@
 }
  @media (max-width: 623px){
    .news-section{
-       height: fit-content;
+       height: auto;
        .news-container{
-           height: 150vh;
-           .box-news{
+           height:auto;
+           .box-news{ 
+               
+               height: auto;
                display: flex;
                flex-wrap: wrap;
                justify-content: flex-start;
+               .empty{padding-bottom: 4rem;}
                article{
                    min-width: 240px;
-                   height: fit-content;
+                   height: auto;
+                   padding: 2rem 0;
                    .text-box-card{
-                       height: fit-content;
+                       height: auto;
                    }
                }
       

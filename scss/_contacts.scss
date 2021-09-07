@@ -227,12 +227,21 @@
             padding:10vh 0;
             .form-container{
                 min-width: 80vw;
+                h3{  margin:2rem 1rem 0 1rem;}
+                form{
+                    margin:1.5rem 1rem 0 1rem;
+                }
+                .privacy{
+                    margin-left: 1rem;
+                }
+                a{margin-right: 1rem;}
             }
             .contacts-container-text-box{
                 padding-top: 3rem;
                 min-width: 80vw;
                 p{font-size: 1.1rem;}
             }
+            
         }
     }
-} //deve stare per ultimo
+} //deve stare per ultimo 

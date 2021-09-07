@@ -239,6 +239,7 @@
         }
     }
     @media (max-width:1000px){
+        height: fit-content;
        display: flex;
        flex-direction: column;
        margin: 0 3vw;
@@ -248,6 +249,12 @@
         
     }
     @media (max-width: 623px){
+        
+         h1{  
+            font-size: 2.2rem ;
+            line-height:unset;
+            padding-bottom:1rem; 
+        }
         #model-viewer{
             padding: 2rem 0 2rem 0;
             model-viewer{ 
