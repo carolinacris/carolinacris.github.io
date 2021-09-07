@@ -3335,7 +3335,10 @@ footer a {
 }
 @media (max-width: 880px) {
   #partners main .text-box p {
+    width: 70vw;
     text-align: start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 #partners main .container-card-partner {

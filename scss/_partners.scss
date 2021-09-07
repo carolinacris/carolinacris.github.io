@@ -12,7 +12,9 @@
             p{width: 50vw;
             padding-top:5vh;
             @media (max-width: 880px) {
+                width: 70vw;
                 text-align:start;
+                align-self: flex-start;
             }}
         }
         .container-card-partner{
