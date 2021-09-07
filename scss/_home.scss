@@ -7,6 +7,7 @@
         @include grid-col-startend (2,3);
         margin-top: -100px;
         width:60% ;
+        
         h2{
             padding-bottom: 3rem;
             font-size:4vw ;
@@ -74,11 +75,12 @@
         justify-self: center;
         width: 33vw;
         transition: ease 0.3s;
-        padding-right: 10vw;
+        padding-right: 11vw;
+        
         &.next{
            padding-right: 0;
             transition: ease 0.3s;
-            transform: translateX(-120%);
+            transform: translateX(-100%);
         }
     }
  

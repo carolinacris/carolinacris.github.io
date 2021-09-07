@@ -187,14 +187,14 @@ header ul .fa-bars {
   width: 33vw;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
-  padding-right: 10vw;
+  padding-right: 11vw;
 }
 #slider .slide.next {
   padding-right: 0;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
-  -webkit-transform: translateX(-120%);
-          transform: translateX(-120%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 @media (max-width: 936px) {
@@ -1204,6 +1204,9 @@ header ul .fa-bars {
   transition: ease 0.2s;
 }
 @media (max-width: 1150px) {
+  .news-section .news-container {
+    margin: 0 3vw;
+  }
   .news-section .news-container .box-news {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1213,6 +1216,9 @@ header ul .fa-bars {
     margin-top: 1rem;
     padding: 0;
     row-gap: 0;
+  }
+  .news-section .news-container .box-news article {
+    padding-bottom: 2rem;
   }
   .news-section .news-container .box-news .empty {
     grid-column-start: 1;
@@ -1243,7 +1249,6 @@ header ul .fa-bars {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 3vw;
   }
 }
 
@@ -1303,7 +1308,6 @@ header ul .fa-bars {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 2rem;
 }
 .contacts-section .contacts-container .form-container h3 {
   color: rgba(54, 54, 54, 0.8);
@@ -3406,7 +3410,7 @@ footer a {
       -ms-flex-align: center;
           align-items: center;
   gap: 25px;
-  margin: 15px;
+  margin: 0 15px 15px 15px;
 }
 #notfound main .box figure {
   background: url(../img/ciccia.jpg) no-repeat center center;
@@ -3750,7 +3754,7 @@ main #menu li.active a:after {
   content: "";
   position: absolute;
   top: 10.5px;
-  left: -27px;
+  left: -26.5px;
   border-radius: 50%;
   width: 10px;
   height: 10px;
