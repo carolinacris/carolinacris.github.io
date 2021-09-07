@@ -3336,6 +3336,11 @@ footer a {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
+  #partners main .text-box h2 {
+    margin: 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 #partners main p {
   width: 50vw;
