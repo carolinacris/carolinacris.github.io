@@ -3329,16 +3329,21 @@ footer a {
       -ms-flex-align: center;
           align-items: center;
 }
-#partners main .text-box p {
-  width: 50vw;
-  padding-top: 5vh;
-}
 @media (max-width: 880px) {
-  #partners main .text-box p {
+  #partners main .text-box {
     width: 70vw;
     text-align: start;
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+}
+#partners main p {
+  width: 50vw;
+  padding-top: 5vh;
+}
+@media (max-width: 880px) {
+  #partners main p {
+    width: 70vw;
   }
 }
 #partners main .container-card-partner {

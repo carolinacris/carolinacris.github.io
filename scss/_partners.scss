@@ -8,15 +8,17 @@
             display: flex;
             flex-direction: column;
             align-items:center ;
-            
-            p{width: 50vw;
-            padding-top:5vh;
             @media (max-width: 880px) {
                 width: 70vw;
                 text-align:start;
                 align-self: flex-start;
             }}
-        }
+            p{width: 50vw;
+            padding-top:5vh;
+            @media (max-width: 880px) {
+                width: 70vw; 
+            }}
+        
         .container-card-partner{
             padding-top: 10vh;
             display: grid;
