@@ -3541,6 +3541,7 @@ footer a {
           flex-direction: column;
   margin-left: 2rem;
   width: 33vw;
+  margin-top: 1rem;
 }
 #forms .form-accedi-container h3, #forms .form-password-container h3 {
   color: rgba(54, 54, 54, 0.8);
@@ -3627,6 +3628,27 @@ footer a {
 }
 #forms .form-password-container {
   display: none;
+}
+@media (max-width: 880px) {
+  #forms .form-accedi-container, #forms .form-password-container {
+    width: 60vw;
+    margin: 0;
+  }
+}
+@media (max-width: 640px) {
+  #forms .form-accedi-container, #forms .form-password-container {
+    width: 70vw;
+    margin: 0;
+  }
+}
+@media (max-width: 425px) {
+  #forms main {
+    height: 80vh;
+  }
+  #forms .form-accedi-container, #forms .form-password-container {
+    width: 90vw;
+    margin-top: 4rem 0;
+  }
 }
 
 html {

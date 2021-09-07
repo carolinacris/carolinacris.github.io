@@ -3,7 +3,8 @@
   main{display: flex;
         justify-content: center;
         align-items: center;
-        height:70vh ;}  
+        height:70vh 
+        ;}  
 .form-accedi-container, .form-password-container{
     background-color: $white;
     @include grid-col-startend (2,3);
@@ -12,6 +13,7 @@
     flex-direction: column;
     margin-left: 2rem;
     width: 33vw;
+    margin-top: 1rem;
     h3{ 
         color:$dark-grey;
         margin:2rem 3rem 0 3rem;
@@ -61,4 +63,23 @@
    
 }
 .form-password-container{display: none;}
+@media(max-width: 880px){
+    .form-accedi-container, .form-password-container{
+        width: 60vw;
+        margin: 0;
+    }
+}
+@media(max-width: 640px){
+    .form-accedi-container, .form-password-container{
+        width: 70vw;
+        margin: 0;
+    }
+}
+@media(max-width:425px){
+    main{height: 80vh;}
+    .form-accedi-container, .form-password-container{
+        width: 90vw;
+        margin-top: 4rem 0;
+    }
+}
 }
